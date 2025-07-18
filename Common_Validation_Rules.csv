@@ -1,0 +1,216 @@
+Carrier,Product,NSPA,TX,OK,PA,WI,OHM,OH-FR,AZ,MO,WV,TN,IA,KS-M,KS-B,TX-M,AR,IN-M,IN-MD,IL-M,IL-MD,Rule Type,Error or Warning,Rule to Enact,Error or Warning Message to Display,"Run in Quote, Application?","Unacceptable Driver/
+Unacceptable Vehicle Indicators",Comments/Changes
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Business Phone"", but ""Primary Phone"" is not entered","Best way to contact is ""Business Phone"" but ""Primary Phone"" is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"""Insured Name"" is not entered",Insured Name is Required,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"""Mailing Address is Required"" is not entered",Mailing Address is Required,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Email, but ""Email"" is not entered","Best way to contact is ""Email"" but and email address is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Fax"", but a fax number is not entered","Best way to contact is ""Fax"" but ""Primary Phone"" is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Home Phone"", but ""Primary Phone"" is not entered","Best way to contact is ""Home Phone"" but ""Primary Phone"" is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Mobile Phone"", but ""Primary Phone"" is not entered","Best way to contact is ""Mobile Phone"" but ""Primary Phone"" is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Warning,"""Best Way to Contact"" is ""Select...""",Best way to contact the Insured has not been entered,"Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If any Underwriting Question is left unanswered…,"Some or all underwriting questions have not been answered or have outstanding issues and are required. 
+
+Review all answers to UW questions. Once questions are verified, select Save or navigate to another screen. (highlight missed questions in red)",Application,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"For ""Bodily Injury"", ""Property Damage"" must be included (and vice versa).","For Bodily Injury, Property Damage must be included.
+Vehicle 'Vehicle Number' - For Property Damage, Bodily Injury must be included.","Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If any required Driver Employment Details are left unanswered…,Employment details are required for Driver.,Application,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If the Named Insured is listed as Married then one Driver or Non-driver must be listed as Husband or Wife or Spouse. ,A married insured is required to list their spouse.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If verified address is in a residence that contains an apartment, unit, or rural route box number and the above data isn't cited display warning message. 
+
+Only enact rule on New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, and Rewrite Renewal transactions 
+
+UW Managers may approve valid or invalid address","""The address entered is missing the apartment or rural route box number. Please verify the address and enter the missing information. If the issue persists, please contact the Underwriting Department.""","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If verified address includes an appartment/unit/rural route box number that is not valid display warning message. 
+
+Only enact rule on New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, and Rewrite Renewal Transactions
+
+UW Managers may approve valid or invalid addresses","""The apartment or rural route box number entered is invalid. Please verify the address and make necessary corrections. If the issue persists, please contact the Undewriting Department""","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"If any premium for any selected coverage is $0.00, trigger Error",Rating Error. Please contact Underwriting Department for assistance.,"Quote, Application, New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",,JAO 8/26/2022 - Added rule for $0.00 premiums
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If any name field contains the following special character(s), trigger error:
+
+/
+<
+>",Name cannot contain <special character>. Please remove <special character> to continue.,"Quote, Application, New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",,"JAO 8/10/2023 - Added per issue #4053 (no Jira assigned yet)
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If the insured's email is the same as the producer's email, trigger error",The insured's email address cannot be the same as the producer's email address. Please correct.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,"JAO 9/27/2023 - PRISPROD-1730
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If Producer States List License Expiration Date is EXPIRED, trigger error
+Do NOT trigger error for UW Manager role",ALERT - Your Producer License has expired. Please contact the Marketing Department.,"New Business (Quote/Application), Rewrite-New",,JAO 1/17/2024 - PRISPROD-533
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If a form is a fill-in form and has required info that has not been entered,Required Data on Form $form.gets('Name').,Application,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"A ""Producer Code"" is required",Producer Code is required.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If a ""Sub Producer"" is entered, it must be a valid ""Producer Code""",The 'Sub Producer' code entered does not correspond to a valid Sub Producer.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If SR22 = Yes and Driver's License State does not equal TX, WI, OH, AZ, MO, WV, TN, IA, KS, AR, IN, IL error","SR22 can only be filed for the state of Texas.
+
+SR22 cannot be filed for the state of <Driver's License State>.","Quote, Application",,"JAO 7/27/2022 - Changed Error or Warning Message to Display to avoid listing out all states w/ SR22s.
+
+MN 11/15/22: Need to verify and update this for all states going forward.  Some states will be acceptable and others will not.  Need to go back to prior states to update them as well.
+
+MN 12/14/22: Jill clarified that we need to update this one state at a time (i.e. don't add IL to the rule for other states until IL is live) SJS5.23.23 PRISUAT-1584
+
+LE 9/09/2024- Added WV to the list GW-1622
+LS 01/14/2025-Removed WV.
+LE 6/11/2025- Added TN  GW-3771"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If Non-Driver is on the policy and any of the following fields are missing: [First Name, Last Name, Relationship to Insured, Non-Driver Type, Gender, Marital Status, Date of Birth}",Non-Driver <Driver Name> has missing information. Please fill in the required fields.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If Transaction Type = Renewal Activate or Rewrite Renewal and the prior term is Cancelled with Type = Insured Request or Company Request and user = Policy Producer, error and provide message:", “This policy was previously cancelled by <Cancel Type>. The policy cannot be reinstated or renewed. Please process a Rewrite New transaction.”,Renewal Start,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If driver has SR22 as Yes and Driver's License Status= No License or International, error",SR22 cannot be filed on No License or International License Status,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,LE 10/01/2024- GW-1734
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"On New Business, Rewrite New transactions only: 
+If Unacceptable Driver Indicator is Yes, and ""Unacceptable Driver Override (eligibility only)” is not checked, display this error message for each driver that qualifies for these conditions.",Driver # <#>:  Not eligible for this program,"Quote, Application - 
+New Business, Rewrite-New","No impact to Unacceptable Driver Indicator
+but uses the indicator as a criteria to run the rule",
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If SR22 is changed from NO to YES on Endorsement transaction AND policy status is Cancel Notice, trigger warning",Policy is pending cancellation. SR22 will not be filed until policy is reinstated.,Endorsement,NO,JAO 7/5/2022 - Added based on TX/OK/PA rule per PRISPROD-856 & PRISUAT-1208
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"If Birth Day YEAR is less than 1900, fire error.",Please confirm date of birth for <Driver's Name>. Driver's age is listed as <age>.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",NO,JAO 10/17/2022 - PRISPROD-1337
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Payment Type"" should be specified",Payment Type Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Automated"" payment method is selected, ""Bank Account Type"" is required",Bank Account Type Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Automated"" payment method is selected, ""Bank Name"" is required",Bank Name Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Automated"" payment method is selected, ""Bank Account Number"" is required",Account Number Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Automated"" payment method is selected, ""Routing Number"" is required",Routing Number Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Credit Card"" payment method is selected, ""Credit Card Number"" is required",Credit Card Number Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If Make Payment amount is < 85% of amount due,Payment must be more than 85% of the amount due.,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If Do Not Reinstate indicator on Special Options screen = Yes AND user permissions for AllowSpecialOptionsReinstatePayment <> Yes, error and display message.",Payment cannot be accepted at this time. Please contact the Underwriting Department for additional information.,Policy,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If Payment Plan is changed and the ""suffix"" is different in the new pay plan, display error message.  For example, if a pay plan is updated from Direct Bill 6 Pay to Automated 6 Pay, then there should be no error message.  However, if a pay plan is updated from Direct Bill 6 Pay to Automated 6 Pay Equity, then there should be an error message.",Pay Plan Changes may affect the current invoice due,Policy,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"If policy status = Cancelled OR Cancel Notice AND Cancel Reason = Non-Pay Dishonored Down Payment, trigger ERROR for Producer and Insured.
+DO NOT FIRE ERROR FOR POLICYCSR, UW1, UW2, UWMANAGER",Producers or Insureds are not allowed to make a payment when a policy is pending cancel or cancelled with the reason Dishonored Down Payment.,Policy,,JAO 7/7/2023 - Added rule per PRISPROD-1791
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If policy status = Cancelled and Cancel Reason = Non-Payment of Premium AND current date is on or after policy expiration date AND Submit Payment is clicked, trigger pop up warning",This payment does not guarantee reinstatement or renewal of coverage. Please contact the Underwriting Department with any questions.,Policy,,JAO 12/21/2023 - Add new pop-up confirmation BEFORE Submit Payment pop up - Issue #4364
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,AL: License Format = 1-8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,AK: License Format = 1-7Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,AZ: 1 Alpha + 8 Numberic OR 9 Numberic,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,AR: 4-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,CA: 1Alpha+7Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,CO: 9Numeric or 1Alpha+3-6Numeric or 2Alpha+2-5Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,CT: 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,DE: 1-7Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,DC: 7Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,FL: 1Alpha+12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,GA: 7-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,HI: 1 Alpha+8Numeric OR 9 Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,ID: 2Alpha+6Numeric+1Alpha or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,IL: 1Alpha+11Numeric or 1Alpha+12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,IN: 1Alpha+9Numeric or 10Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,AF 3/27/25: Added per NTSI License Format List
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,IA: 9Numeric or 3Numeric+2Alpha+4Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,KS: 1Alpha+1Numeric+1Alpha+1Numeric+1Alpha or 1Alpha+8Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,KY: 1Alpha+8Numeric or 1Alpha+9Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,LA: 1-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,ME: 7Numeric or 7Numeric+1Alpha or 8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MD: 1Alpha+12Numeric or 2Alpha+11Numeric,State Driver's License format is incorrect.,"Quote, Application",,JAO 10/31/2023 - PRISPROD-1992
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MA: 1Alpha+8Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MI1Alpha+10Numeric or 1Alpha+12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MN: 1Alpha+12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MS: 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MO: 1Alpha+5-9Numeric or 1Alpha+6Numeric+R or 8Numeric+2Alpha or 9Numeric+1Alpha or 9Numeric or 3Numeric+1Alpha+6Numeric,State Driver's License format is incorrect.,"Quote, Application",,JAO 12/28/23 - PRISPROD-2180
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MT: 1Alpha+8Numeric or 13Numeric or 9Numeric or 14Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NE: 1Alpha+6-8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NV: 9Numeric or 10Numeric or 12Numeric or X+8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"NH: 2Numeric+3Alpha+5Numeric
+3Alpha+8Numeric",State Driver's License format is incorrect.,"Quote, Application",,JAO 10/31/2023 - PRISPROD-1983
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NJ: 1Alpha+14Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NM: 8Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NY: 1Alpha+7Numeric or 1Alpha+18Numeric or 8Numeric or 9Numeric or 16Numeric or 8Alpha,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NC: 1-12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,ND: 3Alpha+6Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,OH: 1Alpha+4-8Numeric or 2Alpha+3-7Numeric or 8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,OK: 1Alpha+9Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,OR: 1-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,PA: 8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,RI: 7Numeric or 1Alpha+6Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,SC: 5-11Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,SD: 6-10Numeric or 12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,TN: 7-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,TX: 7-8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,UT: 4-10Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,VT: 8Numeric or 7Numeric+A,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,VA: 1Alpha+8-to-11Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"WA: 1-7Alpha+any combination of Alpha, Numeric, or * for a total of 12 characters",State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,WV: 7Numeric or 1-2Alpha+5-6Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,WI: 1Alpha+13Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,WY: 9-10Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Pre-Renewal Validation,,"Include with Pre-Renewal Validation task:    
+
+Using the new renewal term effective date, Send TASK if changes made in the current term include any of the following:
+
+If any of the following is true and the Unacceptable Driver Eligibility Override is unchecked OR the Unacceptable Vehicle Override is unchecked, generate a task to the UW group to review the policy. At that point, they can decide to allow the policy to renew or follow steps for non-renewing. If they decided to do nothing the policy will follow the renewal start process as normal.
+",See Task worksheet,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Pre-Renewal Validation,,"When Producer Status = Cancelled, Replaced by Producer is blank, and there is no valid License Class Code on Renewal Effective Date of the policy.",See Task worksheet,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Warning,"On any transaction, if user does not have authority, and they delete an infraction where source is from MVR, they will get a validation error: ",Motor Vehicle Report Infractions cannot be deleted.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Warning,Always display in the closeout screen prior to Issuance,The down payment is always due at policy issuance.,Issuance,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,Display on Closeout Screen when Premium Amount is less than the required down payment,Down payment must be at least <amount due>.,Issuance,,JAO 1/10/2023 PRISPROD-1422
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If Additional Interest Vehicle checkbox is not selected,Additional Interest must be associated with a risk.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If the Insured's Email Address on the Policy General page is blank, the Delivery Method must be ""Batch.""","The Insured's email address is blank. Please either provide an email address or change the Delivery Method to Batch Mail.
+Please enter a valid email address, or select Mail as the Delivery Preference.""","Quote, Application, Endorsement, Renewal Start",,JAO 10/19/2022 - PRISPROD-1341 - Updated error language
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If vehicle # greater than 1 and garaging address not the same for each vehicle.,"""Vehicles must be garaged at the same location""","Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If policy is in CANCEL NOTICE status for Company or Insured cancel type, only UW1, UW2, UWManager should be allowed to make payment. All other users should trigger Error.",The policy is pending cancellation for <Company/Insured> Request. Unable to accept the payment. Please contact the Underwriting Department,Make Payment,,JAO 10/11/2022 - PRISPROD-1317
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If policy is in CANCELLED status for Company or Insured cancel type, only UW1, UW2, UWManager should be allowed to make payment. All other users should trigger Error.",The policy is cancelled for <Company/Insured> Request. Unable to accept the payment. Please contact the Underwriting Department,Make Payment,,JAO 10/11/2022 - PRISPROD-1074
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If UW Fee is added during transaction, display message",All fees added during this transaction will be included in the insured's upcoming monthly installment.,"New Business
+Rewrite New
+Endorsement
+Renewal Change
+Renewal Start
+Rewrite Renewal",,JAO 3/26/2024 PRISUAT-1941                                                                                             LE 5/13/2024 PRISPROD-2416
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If the question ""Is Garaging Addres Different Than Mailing?"" = YES, display message",Please confirm the Garaging Address since the Mailing Address has changed.,"New Business
+Rewrite New
+Endorsement
+Renewal Change
+Renewal Start
+Rewrite Renewal",,JAO 3/26/24 PRISPROD-2381
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If the Mailing Address and Billing Address do not match, display message",Please confirm the Billing Address since the Mailing Address has changed.,"New Business
+Rewrite New
+Endorsement
+Renewal Change
+Renewal Start
+Rewrite Renewal",,JAO 3/26/24 PRISPROD-2381
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If the Mailing Address and Physical Address do not match, display message",Please confirm the Physical Address since the Mailing Address has changed.,"New Business
+Rewrite New
+Endorsement
+Renewal Change
+Renewal Start
+Rewrite Renewal",,JAO 3/26/24 PRISPROD-2381

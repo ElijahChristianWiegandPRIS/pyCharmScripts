@@ -1,0 +1,1885 @@
+Carrier,Product,NSPA,TX,OK,PA,WI,OHM,OH-FR,AZ,MO,WV,TN,IA,KS-M,KS-B,TX-M,AR,IN-M,IN-MD,IL-M,IL-MD,Rule Type,Error or Warning,Rule to Enact,Error or Warning Message to Display,"Run in Quote, Application?","Unacceptable Driver/
+Unacceptable Vehicle Indicators",Comments/Changes
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Business Phone"", but ""Primary Phone"" is not entered","Best way to contact is ""Business Phone"" but ""Primary Phone"" is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"""Insured Name"" is not entered",Insured Name is Required,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"""Mailing Address is Required"" is not entered",Mailing Address is Required,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Email, but ""Email"" is not entered","Best way to contact is ""Email"" but and email address is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Fax"", but a fax number is not entered","Best way to contact is ""Fax"" but ""Primary Phone"" is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Home Phone"", but ""Primary Phone"" is not entered","Best way to contact is ""Home Phone"" but ""Primary Phone"" is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Best Way to Contact"" is ""Mobile Phone"", but ""Primary Phone"" is not entered","Best way to contact is ""Mobile Phone"" but ""Primary Phone"" is not entered on Insured $insuredName.","Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Warning,"""Best Way to Contact"" is ""Select...""",Best way to contact the Insured has not been entered,"Quote, Application",,JAO 3/22/2023 - Updated per PRISPROD-1625
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If any Underwriting Question is left unanswered…,"Some or all underwriting questions have not been answered or have outstanding issues and are required. 
+
+Review all answers to UW questions. Once questions are verified, select Save or navigate to another screen. (highlight missed questions in red)",Application,,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If any Driver Question is left unanswered…,"Review the Driver Questions for each driver. Once all questions are verified, select Save or navigate to the next screen. (highlight missed questions in red)",Application,,"JAO 3/21/24 - Add validation rule for new driver/vehicle specific questions - PRISUAT-1834
+LE 9/06/2024- Add for WV GW-1622
+LE 6/11/2025- Added TN GW-3771"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If any Vehicle Question is left unanswered…,"Review the Vehicle Questions for each vehicle. Once all questions are verified, select Save or navigate to the next screen. (highlight missed questions in red)",Application,,"JAO 3/21/24 - Add validation rule for new driver/vehicle specific questions - PRISUAT-1834
+LE 9/06/2024- Add for WV GW-1622
+LE 6/11/2025- Added TN GW-3771"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"""Garaging Address"" contains a P.O. Box.",Vehicle Garage address contains a P.O. Box.  Please include a physical address.,"Quote, Application",,JAO 4/27/2023 - Removed rule for OH-FR - No vehicle/garaging address allowed SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"More than one active vehicle with the same ""VIN"" number",Vehicle 'Vehicle Number' must have a different VIN than Vehicle 'Vehicle Number'.,"Quote, Application",,JAO 4/27/2023 - Removed rule for OH-FR - No vehicle allowed SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error,"COLL must include OTC (COPR), however OTC (COPR) does not require COLL",Vehicle 'Vehicle Number' - Collision cannot be added without Other Than Collision coverage,"Quote, Application",,"JAO 4/27/2023 - Remove rule for OH-FR - no OTC/COL coverage allowed SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- Remove for AZ PRISUAT-1834
+AF 02/03/2025 - Remove for WV GW-1643
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,YES,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"""Uninsured Motorist Property Damage"" must include ""Uninsured Motorist/Underinsured Motorist Bodily Injury""",Uninsured Motorist/Underinsured Motorist Bodily Injury is required with Uninsured/Underinsured Motorist Property Damage,"Quote, Application",,JAO 4/27/2023 - Add rule for OH Maverick SJS 5.23.23 PRISUAT-1585
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"For ""Bodily Injury"", ""Property Damage"" must be included (and vice versa).","For Bodily Injury, Property Damage must be included.
+Vehicle 'Vehicle Number' - For Property Damage, Bodily Injury must be included.","Quote, Application",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Warning,"""Personal Injury Protection"" is required for all auto liability policies",Personal Injury Protection is required for all auto liability policies unless rejected in writing.,"Quote, Application",,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,YES,NO,NO,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"""Underinsured Motorist Bodily Injury"" cannot exceed ""Bodily Injury""","""Underinsured Motorist Bodily Injury"" coverage cannot exceed ""Bodily Injury"" coverage.","Quote, Application",,"LS 6/12/25:Changed to NO, limits are UI driven"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If any required Driver Employment Details are left unanswered…,Employment details are required for Driver.,Application,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"The total number of Drivers and Non-Drivers where Marital Status = Married must be an even number (i.e. multiple of 2). If it is not, display error message and stop the user so they must fix the data.",The number of married drivers must be an even number.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Broad Form = No,
+The total number of Drivers and Non-Drivers where Marital Status = Married must be an even number (i.e. multiple of 2). If it is not, display error message and stop the user so they must fix the data.",The number of married drivers must be an even number.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,"MN 12/13/22: For IA, this rule only applies on Non-Broad Form policies."
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"The total number of Drivers and Non-Drivers where Marital Status =  Domestic Partnership must be an even number (i.e. multiple of 2). If it is not, display error message and stop the user so they must fix the data.
+",The number of drivers who are in a domestic partnership must be an even number.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If Number of Drivers > 1,Only one principal is allowed for this program. ,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",,MN 11/30/22: New rule for OH-FR SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If Broad Form = Yes and Number of Drivers > 1,Only one driver is allowed with the Broad Form Named Driver Endorsement. ,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",,MN 11/30/22: New rule for IA Maverick
+PRIS,NSPA,X,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Non-Driver Relationship to Insured <> Husband, Wife, or Spouse",Non-Drivers are not allowed for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",,MN 12/1/22: New rule for OH-FR SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If the Named Insured is listed as Married then one Driver or Non-driver must be listed as Husband or Wife or Spouse. ,A married insured is required to list their spouse.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Broad Form = No,
+If the Named Insured is listed as Married then one Driver or Non-driver must be listed as Husband or Wife or Spouse. ",A married insured is required to list their spouse.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,"MN 12/13/22: For IA, this rule only applies on Non-Broad Form policies."
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If the Named Insured is listed with a marital status of Domestic Partnership then one Driver or Non-driver must be listed as Domestic Partner.,An insured in a domestic partnership is required to list their partner.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,
+PRIS,NSPA,X,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If the Named Insured is listed as Single then a Driver or Non-Driver cannot be listed as Husband or Wife or Spouse. ,"“<Insured Name> is listed as Single, but <Driver Name> is listed as <Husband/Wife/Spouse>. Please correct.”","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"LS 01/21/25:Remove ""please correct"""
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If the Named Insured is listed as Single then a Driver or Non-Driver cannot be listed as Husband or Wife or Spouse or Domestic Partner. ,"“<Insured Name> is listed as Single, but <Driver Name> is listed as <Husband/Wife/Spouse/DomesticPartner>. Please correct.”","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"LS 01/21/25:Remove ""please correct"""
+PRIS,NSPA,X,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error,"If the answer to the first Underwriting Question ""Does the applicant reside outside of [the Policy State] for more than one month per year?"" = Yes, error.",Risks who routinely reside and/or travel outside of the Policy State are not eligible for coverage.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/17/2023 - Remove for MO Maverick - different question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If the answer to the first Underwriting Question ""Does the applicant, any scheduled driver, and/or any insured vehicle travel and/or reside outside of the policy state for more than one month per year?"" = Yes, error.",Risks who routinely reside and/or travel outside of the Policy State are not eligible for coverage.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,JAO 4/27/2023 - Added for OH Maverick SJS 5.23.23 PRISUAT-1585
+PRIS,NSPA,X,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If the answer to the first Underwriting Question ""Does the Applicant/Principal travel and/or reside outside of the policy state the state of Ohio more than one month per year?"" = Yes, error.",Risks who routinely reside and/or travel outside of the Policy State are not eligible for coverage.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,MN 11/30/22: New rule for OH-FR SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If UW Question <OutOfState> = YES, trigger error",Risks who routinely reside and/or travel outside of the Policy State are not eligible for coverage.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 6/11/2025- Added TN GW-3771"
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting Question 'Is any vehicle used for business?' = Yes and Vehicle Use is not
+-Business
+-Business with TNC
+-Business with Delivery, or 
+-Business with TNC and Delivery","If ' Is any vehicle used for business? ' is Yes, at least one vehicle must have Business Use Coverage.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Remove for OH-FR - vehicle use is not captured in the same area SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/06/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771
+"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <BusinessVehicle> = YES, and
+Vehicle Use <>
+- Business
+- Business with TNC
+- Business with Delivery, or
+- Business with TNC and Delivery","If the Business Use question is YES, the Vehicle Use for at least one vehicle must include Business.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/06/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <BusinessVehicle> = NO, and
+Vehicle Use =
+- Business
+- Business with TNC
+- Business with Delivery, or
+- Business with TNC and Delivery","If the Business Use question is NO, the Vehicle Use cannot include Business.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/06/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,NO,YES,NO,NO,YES,YES, ,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting Question 'Does any vehicle have special equipment i.e. special paint, sound system or other customizations?' = No and Special Equipment coverage has been added to at least one vehicle.","If the Special Equipment Coverage is included, the Underwriting Question 'Does any vehicle have special equipment i.e. special paint, sound system or other customizations?' must be YES.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <SpecialEquipment> = NO, and
+Special Equipment is included on 1+ vehicle, trigger error","If Special Equipment Coverage is included, the Special Equipment question must be YES.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+"
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting Question 'Is any vehicle used as a public or livery conveyance, including any use of the vehicle in conjunction with any transportation network applications or companies (TNC) or as they are sometimes also known as rideshare applications or companies, pertaining exclusively to the transportation of individuals for a fee?' = Yes and at least one vehicle doesn't have Transportation Network Company Endorsement.","If 'Is any vehicle used as a public or livery conveyance, including any use of the vehicle in conjunction with any transportation network applications or companies (TNC) or as they are sometimes also known as rideshare applications or companies, pertaining exclusively to the transportation of individuals for a fee?' is Yes, at least one vehicle must include TNC coverage.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error,"If the answer to the Underwriting Question 'Is any vehicle used as a public or livery conveyance, including any use of the vehicle in conjunction with any transportation network applications or companies (TNC) or as they are sometimes also known as rideshare applications or companies, pertaining exclusively to the transportation of individuals for a fee?' = No and at least one vehicle HAS Transportation Network Company Endorsement.","If TNC Coverage is included, the answer to 'Is any vehicle used as a public or livery conveyance, including any use of the vehicle in conjunction with any transportation network applications or companies (TNC) or as they are sometimes also known as rideshare applications or companies, pertaining exclusively to the transportation of individuals for a fee?' must be Yes.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting Question 'Is any vehicle used as a public or livery conveyance pertaining to any form of livery including but not limited to products, documents, newspapers, or food?' = Yes and at least one vehicle doesn't have Individual Delivery Coverage.","If  'Is any vehicle used as a public or livery conveyance pertaining to any form of livery including but not limited to products, documents, newspapers, or food?' is Yes, at least one vehicle must include Delivery coverage.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error   ,"If the answer to the Underwriting Question 'Is any vehicle used as a public or livery conveyance pertaining to any forms of livery including but not limited to products, documents, newspapers, or food?' = Yes and at least one vehicle doesn't have Delivery Coverage.","If  'Is any vehicle used as a public or livery conveyance pertaining to any forms of livery including but not limited to products, documents, newspapers, or food?' is Yes, at least one vehicle must include Delivery coverage.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error,"If the answer to the Underwriting Question 'Is any vehicle used as a public or livery conveyance pertaining to any form of livery including but not limited to products, documents, newspapers, or food?' = No and at least one vehicle HAS Delivery Endorsement.","If Delivery Coverage is included, the answer to 'Is any vehicle used as a public or livery conveyance pertaining to any form of livery including but not limited to products, documents, newspapers, or food?' must be Yes.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If the answer to the Underwriting Question 'Is any vehicle used as a public or livery conveyance pertaining to any forms of livery including but not limited to products, documents, newspapers, or food?' = No and at least one vehicle HAS Delivery Endorsement.","If Delivery Coverage is included, the answer to 'Is any vehicle used as a public or livery conveyance pertaining to any forms of livery including but not limited to products, documents, newspapers, or food?' must be Yes.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting Question 'If “Yes”, are you also applying for the TNC Endorsement?' = Yes and at least one vehicle doesn't have Transportation Network Company Endorsement.","If 'If “Yes”, are you also applying for the TNC Endorsement?' is Yes, at least one vehicle must include TNC coverage.","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771
+"
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting Question 'If “Yes”, are you also applying for the TNC Endorsement?' = No and at least one vehicle HAS Transportation Network Company Endorsement.","If TNC Coverage is included, the answer to 'If “Yes”, are you also applying for the TNC Endorsement?' must be Yes.","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting Question 'If “Yes”, are you also applying for the Individual Delivery Coverage Endorsement?' = Yes and at least one vehicle doesn't have Individual Delivery Endorsement.","If 'If “Yes”, are you also applying for the Individual Delivery Coverage Endorsement?' is Yes, at least one vehicle must include Individual Delivery Coverage.","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting Question 'If “Yes”, are you also applying for the Individual Delivery Coverage Endorsement?' = No and at least one vehicle HAS Individual Delivery Endorsement.","If Delivery Coverage is included, the answer to 'If “Yes”, are you also applying for the Individual Delivery Coverage Endorsement?' must be Yes.","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Removed TN GW-3771"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <LiveryVehicle> = YES, and
+1+ Vehicle doesn't include Transportation Network Company Endorsement, trigger error","If the primary TNC Question is Yes, at least one vehicle must include TNC Coverage.","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023-AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <LiveryVehicle> = NO, and
+1+ Vehicle includes Transportation Network Company Endorsement, trigger error","If the primary TNC Question is No, TNC Coverage cannot be included for any vehicle(s).","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023-AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <LiveryVehicleDesc> = YES, and
+1+ Vehicle doesn't include Transportation Network Company Endorsement, trigger error","If the secondary TNC Question is Yes, at least one vehicle must include TNC Coverage. ","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023-AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <LiveryVehicleDesc> = NO, and
+1+ Vehicle includes Transportation Network Company Endorsement, trigger error","If the secondary TNC Question is No, TNC Coverage cannot be included for any vehicle(s).","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023-AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <AddLiveryVehicle> = YES, and
+1+ Vehicle doesn't include Individual Delivery Endorsement, trigger error","If the primary Individual Delivery Question is Yes, at least one vehicle must include Individual Delivery Coverage.","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023-AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <AddLiveryVehicle> = NO, and
+1+ Vehicle includes Individual Delivery Endorsement, trigger error","If the primary Individual Delivery Question is No, Individual Delivery Coverage cannot be included for any vehicle(s).","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023-AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <AddLiveryVehicleDesc> = YES, and
+1+ Vehicle doesn't include Individual Delivery Endorsement, trigger error","If the secondary Individual Delivery Question is Yes, at least one vehicle must include Individual Delivery Coverage. ","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023-AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <AddLiveryVehicleDesc> = NO, and
+1+ Vehicle includes Individual Delivery Endorsement, trigger error","If the secondary Individual Delivery Question is No, Individual Delivery Coverage cannot be included for any vehicle(s).","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023-AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622"
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If the answer to the Underwriting Question 'Do you or any members of your household drive out of state for work 3 or more times per month?' = Yes, and no vehicles have Out of State Commuter = Yes.","If ""Do you or any members of your household drive out of state for work 3 or more times per month?"" is Yes, at least one vehicle must include the Out of State Commuter Surcharge.","Quote, Application - 
+New Business, Rewrite-New, Endorsement, Renewal Start, Renewal Changes, Rewrite-Renewal
+",,
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,If the answer to the Underwriting Question 'Are you also applying for Contents PLUS Renters Endorsement?' =  Yes and Line.ContentsPlusInd = No,"If 'Are you also applying for Contents PLUS Renters Endorsement?' is Yes, Contents PLUS Renters Endorsement must be included.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Remove for TN GW-3771
+"
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,If the answer to the Underwriting Question 'Are you also applying for Contents PLUS Renters Endorsement?' =  No and Line.ContentsPlusInd = Yes," If the Contents PLUS Renters Endorsement is included, the Underwriting Question 'Are you also applying for Contents PLUS Renters Endorsement?' must be Yes","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Remove for TN GW-3771"
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting Question 'If applying for Contents PLUS Renters Endorsement, have there been any losses in the past 3 years (regardless of any applicable insurance coverage)?' = Yes","If 'If applying for Contents PLUS Renters Endorsement, have there been any losses in the past 3 years (regardless of any applicable insurance coverage)?' is Yes, risk is ineligible for coverage.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Remove for TN GW-3771"
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If the answer to the Underwriting question 'If applying for Contents PLUS Renters endorsement, have you been charged with or convicted of the crime of arson in the last 5 years?' = Yes","If 'If applying for Contents PLUS Renters endorsement, have you been charged with or convicted of the crime of arson in the last 5 years?' is Yes, risk is ineligible for coverage.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Remove for OH-FR - UW question doesn't exist SJS 5.23.23 PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Remove for WV GW-1622
+LE 6/11/2025- Remove for TN GW-3771"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <ContentsPlusRenters> = YES, and
+Line.ContentsPlusInd = NO, trigger error","If the primary Contents PLUS Renters question is Yes, Contents PLUS Renters Endorsement must be included. ","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Added for WV GW-1622
+LE 6/11/2025- Added TN GW-3771"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <ContentsPlusRenters> = NO, and
+Line.ContentsPlusInd = YES, trigger error","If the primary Contents PLUS Renters question is No, Contents PLUS Renters Endorsement cannot be included. ","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Added for WV GW-1622
+LE 6/11/2025- Added TN GW-3771"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <ContentsPlusRentersLossDesc> = YES
+Line.ContentsPlusInd = YES, trigger error","If the Loss-Related Contents PLUS Renters question is YES, Contents PLUS Renters Endorsement cannot be included.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Added for WV GW-1622
+LE 6/11/2025- Added TN GW-3771"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <ContentsPlusRentersCrimeDesc> = YES
+Line.ContentsPlusInd = YES, trigger error","If the Arson-Related Contents PLUS Renters question is YES, Contents PLUS Renters Endorsement cannot be included.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Added for WV GW-1622
+LE 6/11/2025- Added TN GW-3771"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,If the answer to the Driver question 'Do you use any vehicle for any Delivery purposes?' = Yes,Delivery vehicle usage is ineligible for this program.,"Quote, Application, New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",Set Unacceptable Driver Indicator to Yes,MN 11/30/22: New rule for OH-FR SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,If the answer to the Driver question 'Do you use any vehicle for any Public Livery services?' = Yes,Public Livery vehicle usage is ineligible for this program.,"Quote, Application, New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",Set Unacceptable Driver Indicator to Yes,MN 11/30/22: New rule for OH-FR SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If the answer to the Driver question 'Do you use any vehicle in conjunction with any Transportation Network Applications or Companies, or as they sometimes refer to themselves, Rideshare Applications or Companies?' = Yes",TNC vehicle usage is ineligible for this program.,"Quote, Application, New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",Set Unacceptable Driver Indicator to Yes,MN 11/30/22: New rule for OH-FR SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,,NO,,,YES,NO,NO,NO,NO,NO,,,,,,,,,,Validation,Error   ,"If the answer to the Underwriting Question 'Does any vehicle have a salvage history including rebuilt or flood designation?' = Yes AND no vehicles have answered YES to Salvage History question, trigger error","If 'Does any vehicle have a salvage history including rebuilt or flood designation?' is Yes, please answer Yes to the following question on the rebuilt Vehicle's Page:
+'Does the title for this vehicle have any Salvage History including a Rebuilt or Flood Designation?'","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Add for OH Maverick SJS 5.23.23 PRISUAT-1585
+LE 11/21/2023- remove for AZ PRISUAT-1834
+"
+PRIS,NSPA,X,,NO,,,YES,NO,NO,NO,NO,NO,,,,,,,,,,Validation,Error   ,"If the answer to the Underwriting Question 'Does any vehicle have a salvage history including rebuilt or flood designation?' = No AND at least one vehicle has answered YES to Salvage History question, trigger error","If 'Does the title for this vehicle have any Salvage History including a Rebuilt or Flood Designation?' is Yes, please answer Yes to the following Underwriting Question: 'Does any vehicle have a salvage history including rebuilt or flood designation?' ","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 4/27/2023 - Add for OH Maverick SJS 5.23.23 PRISUAT-1585
+LE 11/21/2023- remove for AZ PRISUAT-1834
+"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <SalvageHistory> = Yes AND 
+No vehicles have answered YES to Salvage History vehicle question, trigger error","If the Salvage History question is Yes, at least one vehicle must indicate Salvage History on the Vehicle's page.","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+JAO 2/16/2024 - Question moved to Vehicle/Risk Questions - PRISUAT-1834; PRISUAT-1833
+LE 9/09/2024- Removed for WV GW-1622"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If UW Question <SalvageHistory> = NO AND 
+At least 1 vehicle has answered YES to Salvage History vehicle question, trigger error","If the Salvage History question is No, Salvage History cannot be indicated on any Vehicle's page. ","Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 7/18/2023 - Add for MO Maverick and future states to use UW Question Name/Description as Rule to Enact instead of full UW Question
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+JAO 2/16/2024 - Question moved to Vehicle/Risk Questions - PRISUAT-1834; PRISUAT-1833
+LE 9/09/2024- Removed for WV GW-1622"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Warning,"If Non-Driver Type = Excluded, display warning message.",Excluded drivers are not eligible for this program. Please rate all household members and vehicle operators.,"Quote, Application",,"LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 6/11/2025- Remove for TN GW-3771"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If verified address is in a residence that contains an apartment, unit, or rural route box number and the above data isn't cited display warning message. 
+
+Only enact rule on New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, and Rewrite Renewal transactions 
+
+UW Managers may approve valid or invalid address","""The address entered is missing the apartment or rural route box number. Please verify the address and enter the missing information. If the issue persists, please contact the Underwriting Department.""","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If verified address includes an appartment/unit/rural route box number that is not valid display warning message. 
+
+Only enact rule on New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, and Rewrite Renewal Transactions
+
+UW Managers may approve valid or invalid addresses","""The apartment or rural route box number entered is invalid. Please verify the address and make necessary corrections. If the issue persists, please contact the Undewriting Department""","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Non-Renewal Rescind transaction is processed 20 days or less prior to the expiration date of the policy term, and the ""Approved Tort Selection Form - Renewal"" is not attached, display warning message",Renewal Tort Selection Process has not been completed. Please confirm receipt of approved signed Tort Selection form for the Renewal.,Non-Renewal Rescind,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"If any premium for any selected coverage is $0.00, trigger Error",Rating Error. Please contact Underwriting Department for assistance.,"Quote, Application, New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",,JAO 8/26/2022 - Added rule for $0.00 premiums
+PRIS,NSPA,X,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If the answer to the Underwriting Question ""Does the Applicant/Principal use any vehicle, whether owned or non-owned, for business?"" is YES, trigger warning",Business Use is an unacceptable Vehicle Usage for this program.,"Quote, Application, New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",Criteria as documented in column L sets Unacceptable Indicator to Yes,JAO 5/3/2023 - Added rule for OH-FR SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error   ,"If quote is bridged from a rater and policy term = 1 year, trigger validation error ",Policy Terms longer than 6 months are no longer acceptable. Quote has been updated to reflect a 6 month term.,"Quote, Application, Endorsement, Renewal Start, Renewal Change",,"JAO 8/4/2023 - PRISPROD-1971
+LE 11/21/2023- Remove for AZ PRISUAT-1834
+LE 6/11/2025- OK and WI changed to No GW-3476 GW-3478"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If any name field contains the following special character(s), trigger error:
+
+/
+<
+>",Name cannot contain <special character>. Please remove <special character> to continue.,"Quote, Application, New Business, Rewrite-New, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",,"JAO 8/10/2023 - Added per issue #4053 (no Jira assigned yet)
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If the insured's email is the same as the producer's email, trigger error",The insured's email address cannot be the same as the producer's email address. Please correct.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,"JAO 9/27/2023 - PRISPROD-1730
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,,,,,,,NO,,,,,,,,,,,,,Underwriting,Warning,"If the answer to the ""Mexico"" Underwriting Question is YES, trigger warning",This policy does NOT extend coverage to accidents or losses in Mexico. ,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,"
+LE 12/15/2023- AZ requirements PRISUAT-1834
+JAO 2/15/2024 - AZ Changed to NO; Question is now a Vehicle/Risk Question - PRISUAT-1834"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If Producer States List License Expiration Date is EXPIRED, trigger error
+Do NOT trigger error for UW Manager role",ALERT - Your Producer License has expired. Please contact the Marketing Department.,"New Business (Quote/Application), Rewrite-New",,JAO 1/17/2024 - PRISPROD-533
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,,,,,,,,,,Validation,Warning,"If OTC deductible = <$1,000, change deductible to $1,000 and trigger warning","<Company Name> no longer offers the <selected deductible> in this program. Other Than Collision Deductible has been changed to $1,000.","New Business (Quote/Application), Rewrite-New",,"JAO 1/29/2024 - PRISPROD-2282
+**MO rule is effective 3/8/2024 - PRISPROD-2253
+LE 9/09/2024- Removed for WV GW-1622
+LE 6/11/2025- Removed for TX GW-3472, PA, GW-3475, OK GW-3476, OH GW-3477, WI GW-3478, MO GW-3479"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,,,,,,,,,,Validation,Warning,"If COL deductible = <$1,000, change deductible to $1,000 and trigger warning","<Company Name> no longer offers the <selected deductible> in this program. Collision Deductible has been changed to $1,000.","New Business (Quote/Application), Rewrite-New",,"JAO 1/29/2024 - PRISPROD-2282
+**MO rule is effective 3/8/2024 - PRISPROD-2253
+LE 9/09/2024- Removed for WV GW-1622
+LE 6/11/2025- Removed for TX GW-3472, PA, GW-3475, OK GW-3476, OH GW-3477, WI GW-3478, MO GW-3479"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If the Insurance Score Disclosure question is No, trigger error",Insured must acknowledge their understanding and acceptance of the Insurance Score Disclosure to continue the quote. ,"New Business (Quote/Application), Rewrite-New",,LE 9/19/2024- Added for WV GW-1622
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Warning,"If the NCF data report fails or is down during the quote process, trigger warning
+
+Message should be cleared when the report has been run successfully.","The Insurance Score report is currently unavailable. If the policy is issued, the report will be run by the Underwriting Department which may impact the quoted premium. ","New Business (Quote/Application), Rewrite-New
+Endorsement",,"LE 9/24/2024- Added for WV GW-1622
+LE 5/02/2025- Added endorsement transaction GW-3082"
+PRIS,NSPA,X,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If driver age is <18 and relationship to insured = Self, trigger error",The Named Insured must be 18 years old or older. ,"New Business (Quote/Application), Rewrite-New",,LE 7/08/2025- New rule for OK GW-4194
+Carrier,Product,NSPA,,,,,,,,,,,,,,,,,,,,Rule Type,Error or Warning,Rule to Enact,Error or Warning Message to Display,"Run in Quote, Application?",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Warning,"""Garaging Address"" state is not the same as the Risk State.",Vehicle Garaging address state is not the same as the Risk State.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Warning,"""Physical Address"" state is not the same as the Risk State.
+Rule applies to Non-Owners or Contents PLUS coverages",Address outside of <Policy State> is ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,"MN 11/30/22: New rule for OH-FR SJS 5.23.23 PRISUAT-1584
+JAO 8/4/2023 - Updated language based on convo w/ Omar
+LE 12/05/2023- PRISPROD-1960 to be used when policy is non-owner
+"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Address is not verified, error",Address has not been verified. Please select the Verify Address link.,"Quote, Application",,JAO 4/27/2023 - Added for OH -FR SJS 5.23.23 PRISUAT-1584
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If Address or Garaging Address is not verified, error",Address has not been verified. Please select the Verify Address link.,"Quote, Application",,JAO 4/27/2023 - Removed OH-FR (no garaging address) SJS5.23.23 PRISUAT-1584
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If a form is a fill-in form and has required info that has not been entered,Required Data on Form $form.gets('Name').,Application,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"A ""Producer Code"" is required",Producer Code is required.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If a ""Sub Producer"" is entered, it must be a valid ""Producer Code""",The 'Sub Producer' code entered does not correspond to a valid Sub Producer.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If SR22 = Yes and Driver's License State does not equal TX, WI, OH, AZ, MO, WV, TN, IA, KS, AR, IN, IL error","SR22 can only be filed for the state of Texas.
+
+SR22 cannot be filed for the state of <Driver's License State>.","Quote, Application",,"JAO 7/27/2022 - Changed Error or Warning Message to Display to avoid listing out all states w/ SR22s.
+
+MN 11/15/22: Need to verify and update this for all states going forward.  Some states will be acceptable and others will not.  Need to go back to prior states to update them as well.
+
+MN 12/14/22: Jill clarified that we need to update this one state at a time (i.e. don't add IL to the rule for other states until IL is live) SJS5.23.23 PRISUAT-1584
+
+LE 9/09/2024- Added WV to the list GW-1622
+LS 01/14/2025-Removed WV.
+LE 6/11/2025- Added TN  GW-3771"
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Warning,"If SR-22 = Yes for any driver and Pay Plan <> Direct/Automated 5 Pay, Automated 6, or 6 Equity Pay or 6 High Down Pay, or Direct/Automated PIF payment plan, error","Policy has a driver with SR-22 filing. Payment Plan must be  5 Pay, Automated, or Pay In Full.",Endorsement,,LE 8/23/2024- Updated to include new pay plan GW-1574
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Warning,"If SR-22 = Yes for any driver and Pay Plan <> 5-Pay, 11-Pay or Paid in Full, error","Policy has a driver with SR-22 filing. Payment plan must be 5-Pay, 11-Pay or Paid in Full.",Endorsement,,
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If SR-22 = Yes and MVR = No Hit, provide error",Driver <Driver Name> has an unverifiable MVR. A verifiable Driver's License Number is required to file the SR-22.,"Quote, Application",,"LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 9/09/2024- Added for WV GW-1622
+LE 6/11/2025- Added TN GW-3771"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If Non-Driver is on the policy and any of the following fields are missing: [First Name, Last Name, Relationship to Insured, Non-Driver Type, Gender, Marital Status, Date of Birth}",Non-Driver <Driver Name> has missing information. Please fill in the required fields.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If Transaction Type = Renewal Activate or Rewrite Renewal and the prior term is Cancelled with Type = Insured Request or Company Request and user = Policy Producer, error and provide message:", “This policy was previously cancelled by <Cancel Type>. The policy cannot be reinstated or renewed. Please process a Rewrite New transaction.”,Renewal Start,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If driver has SR22 as Yes and Driver's License Status= No License or International, error",SR22 cannot be filed on No License or International License Status,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,LE 10/01/2024- GW-1734
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Customer Specific Rules,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Condition 1 - Coverage Combinations Conditions,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury is 30,000/60,000 and the following is True: 
+- Property Damage is not 25,000","If Bodily Injury is $30,000/$60,000, then Property Damage must be $25,000.","Quote, Application",,
+PRIS,NSPA,X,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury is 25,000/50,000 and Property Damage is not 25,000","If Bodily Injury is $25,000/$50,000, then Property Damage must be $25,000.","Quote, Application",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury is 30,000/60,000 and the following is True: 
+- UMUI is not 30,000/60,000
+- UMUI is not Reject","If Bodily Injury is $30,000/$60,000, then UMUI must be $30,000/$60,000 or Reject","Quote, Application",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury is 40,000/80,000 and the following is True: 
+- Property Damage is not 35,000","If Bodily Injury is $40,000/$80,000, then Property Damage must be $35,000","Quote, Application",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury is 40,000/80,000 and the following is True: 
+- UMUI is not 40,000/80,000
+- UMUI is not Reject","If Bodily Injury is $40,000/$80,000, then UMUI must be $40,000/$80,000 or Reject","Quote, Application",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury is 50,000/100,000 and either of the following is True: 
+- Property Damage is not 25,000, or 50,000
+- UMUI is not 50,000/100,000","Property Damage should be $25,000 or $50,000 and Unisured Motorist / Underinsured Motorist Bodily Injury should be $50,000/100,000
+
+If Bodily Injury is $50,000/$100,000, then Property Damage must be $25,000 or $50,000","Quote, Application",,
+PRIS,NSPA,X,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury is 50,000/100,000 and Property Damage is not 50,000","If Bodily Injury is $50,000/$100,000, then Property Damage must be $50,000.","Quote, Application",,
+PRIS,NSPA,X,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury is 100,000/300,000 and Property Damage is not 50,000 or 100,000","If Bodily Injury is $100,000/$300,000, then Property Damage must be $50,000 or $100,000.","Quote, Application",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury is 50,000/100,000 and the following is True: 
+- UMUI is not 50,000/100,000
+- UMUI is not Reject","If Bodily Injury is $50,000/$100,000, then UMUI must be $50,000/$100,000 or Reject","Quote, Application",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If both MEDP and PINP exist
+",Both Personal Injury Protection or Medical Payments cannot be added.,"Quote, Application",,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,Validation,Error,If PIPM <> Reject and MEDP <> None,Both Personal Injury Protection Medical Payments or Medical Payments cannot be added.,"Quote, Application",,MN 12/21/22: Variation of existing rule in AR.
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,Other Than Collision and Collision must be written together,Other Than Collision and Collision must be written together.,"Quote, Application",,"LE 11/20/23- AZ requirements PRISUAT-1834
+LE 9/09/2024- Added WV GW-1643
+LE 6/11/2025- Added TN GW-3777"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,Rental Reimbursement can only be offered when Other Than Collision AND Collision are on the vehicle,Rental Reimbursement can only be offered when Other Than Collision and Collision are on the vehicle.,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR (no rental coverage) SJS PRISUAT-1584
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Drivers License Status for any driver is not equal to ""Valid"" and Bodily Injury Limit = $40,000 / $80,000 or $50,000 / $100,000, error and show message.","Each driver must have a valid US drivers license in order to purchase increased limits for Bodily Injury coverages. Please select $30,000 / $60,000 to proceed.","Quote, Application, Endorsement",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If any driver has major violations with the past 36 months and Bodily Injury Limit = $40,000 / $80,000 or $50,000 / $100,000, error and show message.","Drivers with major violations in the past 36 months do not qualify for increased limits for Bodily Injury coverages. Please select $30,000 / $60,000 to proceed.","Quote, Application, Endorsement",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Error,"If any driver has more than 8 chargeable points and Bodily Injury Limit = $40,000 / $80,000 or $50,000 / $100,000, error and show message.","Drivers with more than 8 chargeable points do not qualify for increased limits for Bodily Injury coverages. Please select $30,000 / $60,000 to proceed.
+
+Replace 'Please' with 'Modify the Application and'","Quote, Application, Endorsement",,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Error,"If any driver with age < 21 has more than 4 chargeable points and Bodily Injury Limit = $40,000 / $80,000 or $50,000 / $100,000, error and show message.","Drivers under age 21 with more than 4 chargeable points do not qualify for increased limits for Bodily Injury coverages. Please select $30,000 / $60,000 to proceed.
+
+Replace 'Please' with 'Modify the Application and'","Quote, Application, Endorsement",,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Property Damage is less than $100,000 and Uninsured Motorists Property Damage is $100,000 trigger error message",Uninsured Motorists Property Damage coverage cannot exceed Property Damage coverage. ,"Quote, Application, Endorsement",,LE 9/10/2024- Added WV GW-1643
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Error,"If Policy Effective Date - Previous Carrier Effective Date is greater than 30 days,  the user must answer No to the question ""Does the insured have prior insurance coverage with no lapse or a lapse of less than 30 days?""","The driver has a lapse of more than 30 days. Please answer No to the question ""Does the insured have prior insurance coverage with no lapse or a lapse of less than 30 days?""","Quote, Application, Endorsement
+
+Run on Endorsement only if the fields following fields are changed: Previous Carrier Effective Date, ""Does the insured have prior insurance coverage…""",,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Underwriting,Error,"If Policy Effective Date - Previous Carrier Effective Date is greater than 21 days,  the user must answer No to the question ""Does the insured have prior insurance coverage with no lapse or a lapse 21 days or less?*""","The driver has a lapse of more than 21 days. Please answer No to the question ""Does the insured have prior insurance coverage with no lapse or a lapse 21 days or less?*""","Quote, Application, Endorsement
+
+Run on Endorsement only if the fields following fields are changed: Previous Carrier Effective Date, ""Does the insured have prior insurance coverage…""",,JAO 4/27/2023 - Remove for OH-FR (no rules for length of POP lapse) SJS PRISUAT-1584
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,YES,YES,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error,"If BODI limit selected is 50,000/100,000 and each driver does not meet ALL of these minimum qualifications: 
+- License Status = Valid
+- MVR Status is not no Hit
+- Infractions with charged points > 0 that are not ignored cannot be categorized as ""Major"" 
+- If driver is > or = 21, Total Chargeable Points is not > 8 
+- If driver is < 21, Total Chargeable Points is not > 4
+
+
+(Note:  INow automatically checks ignore indicator when infraction date is outside of chargeable period, Total Chargeable Points does not count infraction or loss history points that are ignored)
+ ","See PRISPROD-58 where we requested to have an individual error message depending on why the Driver is unacceptable for higher limits:
+
+<Driver #> does not have a valid US license which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has at least 1 Major Violation which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has more than 8 points which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> is under age 21 and has more than 4 points which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.","Quote, Application",,"JAO 4/27/2023 - Remove for OH-FR (no higher limits) SJS PRISUAT-1584
+LE 9/09/2024- Removed for WV GW-1643"
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If BODI limit selected is 50,000/100,000 and each driver does not meet ALL of these minimum qualifications: 
+- License Status = Valid
+- MVR Status is not no Hit
+- Infractions with charged points > 0 that are not ignored cannot be categorized as ""Major""
+- SR22 = No
+- Total Chargeable Points is not > 8
+
+(Note:  INow automatically checks ignore indicator when infraction date is outside of chargeable period, Total Chargeable Points does not count infraction or loss history points that are ignored)
+ ","See PRISPROD-58 where we requested to have an individual error message depending on why the Driver is unacceptable for higher limits:
+
+<Driver #> does not have a valid US license which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has at least 1 Major Violation which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has a Financial Responsibility Filing which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has more than 8 points which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.","Quote, Application
+(New Business, Rewrite-New)",,
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,YES,YES,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error,"If BODI limit selected is 100,000/300,000 and each driver does not meet ALL of these minimum qualifications: 
+- License Status = Valid
+- MVR Status is not no Hit
+- SR22 = No
+- Infractions with charged points > 0 that are not ignored cannot be categorized as ""Major"" 
+- If driver is > or = 21, Total Chargeable Points is not > 2 
+- If driver is < 21, Total Chargeable Points is not > 0
+
+(Note:  INow automatically checks ignore indicator when infraction date is outside of chargeable period, Total Chargeable Points does not count infraction or loss history points that are ignored)
+ ","(Note if any driver doesn't meet that 50/100 limit, they will get the validation error to drop to the 25/50 limit so the wording of this error msg was designed to guide them to verify eligibility with no promises for the middle limit)
+
+See PRISPROD-58 where we requested to have an individual error message depending on why the Driver is unacceptable for higher limits:
+
+<Driver #> does not have a valid US license which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has a Financial Responsibility Filing which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 or $50,000/$100,000 to proceed.
+
+<Driver #> has at least 1 Major Violation which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has more than 2 points which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 or $50,000/$100,000 to proceed.
+
+<Driver #> is under age 21 and has more than 0 points which is unacceptable for the Bodily Injury Limit selected. Please selec t$25,000/$50,000 or $50,000/$100,000 to proceed.","Quote, Application",,"JAO 4/27/2023 - Remove for OH-FR (no higher limits) SJS PRISUAT-1584
+LE 9/09/2024- Removed for WV GW-1643"
+PRIS,NSPA,X,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If BODI limit selected is 100,000/300,000 and each driver does not meet ALL of these minimum qualifications: 
+- License Status = Valid
+- MVR Status is not no Hit
+- SR22 = No
+- Infractions with charged points > 0 that are not ignored cannot be categorized as ""Major""
+- Number of infractions categorized as ""Minor"" is not > 1
+- Total Chargeable Points is not > 2
+
+(Note:  INow automatically checks ignore indicator when infraction date is outside of chargeable period, Total Chargeable Points does not count infraction or loss history points that are ignored)
+ ","(Note if any driver doesn't meet that 50/100 limit, they will get the validation error to drop to the 25/50 limit so the wording of this error msg was designed to guide them to verify eligibility with no promises for the middle limit)
+
+See PRISPROD-58 where we requested to have an individual error message depending on why the Driver is unacceptable for higher limits:
+
+<Driver #> does not have a valid US license which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has a Financial Responsibility Filing which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has at least 1 Major Violation which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 to proceed.
+
+<Driver #> has more than 1 Minor Violation which is unacceptable for the Bodily Injury Limit selected.  Please select $25,000/$50,000 or $50,000/$100,000 to proceed.
+
+<Driver #> has more than 2 points which is unacceptable for the Bodily Injury Limit selected. Please select $25,000/$50,000 or $50,000/$100,000 to proceed.","Quote, Application
+(New Business, Rewrite-New)",,
+PRIS,NSPA,X,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury limit selected on Auto General = 25,000/50,000 and either of the following is not TRUE
+UMBI limit selection on Auto General tab is not ""Reject""
+UMBI limit selection on Auto General tab is not 25,000/50,000 
+","Uninsured Motorist Bodily Injury Limit must be equal to or less than Bodily Injury Limit, if not Rejected.  ","Quote, Application",,"JAO 7/27/2022 - Removing rules for WI ONLY. WI Limits are dynamic, so you cannot choose an unacceptable coverage combination.
+
+MN: Same is true for OH, and likely all states moving forward."
+PRIS,NSPA,X,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Bodily Injury limit selected on Auto General = 50,000/100,000  and either of the following is not TRUE
+UMBI limit selection on Auto General tab is not ""Reject""
+UMBI limit selection on Auto General tab is not 25,000/50,000 
+UMBI limit selection on Auto General tab is not 50,000/100,000","Uninsured Motorist Bodily Injury Limit must be equal to or less than Bodily Injury Limit, if not Rejected.  ","Quote, Application",,"JAO 7/27/2022 - Removing rules for WI ONLY. WI Limits are dynamic, so you cannot choose an unacceptable coverage combination.
+
+MN: Same is true for OH, and likely all states moving forward."
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If Enhanced Towing and Rental = Yes, and if there is at least one vehicle on the policy,  no vehicle has both TOWL and RERE trigger error on Auto General tab on save",“At least one vehicle must have towing and rental coverage to be eligible for Enhanced Towing and Rental coverage.”   ,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If SEQU coverage is selected, and vehicle does not have both COPR and COLL coverage",Special Equipment coverage requires both Other Than Collision and Collision Coverage. ,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If Contents Plus Renters Endorsement = NO and Contents Plus Additional Interest exists, then error.","If Contents PLUS coverage is removed, then the Contents PLUS Additional Interest needs to be removed.","Quote, Application",,"JAO 1/5/2023 PRISPROD-1458
+JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+LE 11/21/2023- Remove for AZ PRIUAT-1834
+AG 2/11/2025- Changed OK, WI, OHM, & MO to NO to match current functionality. 
+AG 2/11/2025- WV GW-1643"
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error   ,"If Contents Plus Renters Endorsement = NO and Contents Plus Additional Interest exists, remove Contents Plus Additional Interest. ",N/A ,"Quote, Application",,"AG 2/11/2025- WV GW-2470
+AG 2/11/2025-MO & OHM GW- 2471 Added new functionality to match OK & WI"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error   ,"If Contents Plus Renters Endorsement = Yes and Renters Address block isn't completed, then error.",Contents PLUS Renters Endorsement requires Physical Address,"Quote, Application",,"JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+LE 11/21/2023- Remove for AZ PRISUAT-1834
+LS 2/12/2025-Updated since functionality is not needed"
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,NO,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If CONT limit 1 (Coverage C) is more than CONT limit 2 (Coverage E), then error.","Contents PLUS Renters Endorsement: Personal Property Coverage Limit may not exceed Personal Liability limit.  
+
+Note:  Display this on Contents Plus coverage detail so user can change the Coverage C limit ","Quote, Application",,"JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+LE 11/21/2023- Remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If both RAST and LOCK are on the same policy, then error.",Both Emergency Roadside Assistance and Locksmith Services Endorsement cannot be added to the same policy.  ,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If at least one vehicle is entered, and 
+If PIPE is selected and there isn't a single vehicle listed on the policy that has BOTH COPR and COLL coverages
+
+(do not run this if no vehicles are entered yet)",Pet Injury Protection Endorsement requires at least one vehicle with both Other Than Collision and Collision coverage.,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,"If at least one vehicle is entered, and 
+If Accidental Airbag is selected and there isn't a single vehicle listed on the policy that has BOTH COPR and COLL coverages
+
+(do not run this if no vehicles are entered yet)",Accidental Airbag Deployment Endorsement requires at least one vehicle with both Other Than Collision and Collision coverage.,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,If (Vehicle Use = 'TNC' OR 'Business and TNC' OR 'Business and Delivery and TNC' OR 'Delivery and TNC') AND Transportation Network Company Coverage = 'No',Vehicle # - Vehicle use is TNC. TNC coverage must be added.,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,If Transportation Network Company Coverage = 'Yes' AND (Vehicle Use <> 'TNC' OR 'Business and TNC' OR 'Business and Delivery and TNC' OR 'Delivery and TNC'),Vehicle # - TNC coverage is selected. Vehicle use must include TNC.,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,If (Vehicle Use = 'Delivery' OR 'Business and Delivery' OR 'Business and Delivery and TNC' OR 'Delivery and TNC') AND Individual Delivery Coverage = 'No',Vehicle # - Vehicle use is Delivery. Delivery coverage must be added.,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error   ,If Individual Delivery Coverage = 'Yes' AND (Vehicle Use <> 'Delivery' OR 'Business and Delivery' OR 'Individual Delivery Coverage' OR ' Delivery and TNC'),Vehicle # - Delivery coverage is selected. Vehicle use must include Delivery.,"Quote, Application",,JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error   ,If Other Than Collision Deductible = No and Full Safety Glass = Yes,Vehicle # - Full Safety Glass coverage cannot be added without Other Than Collision coverage.,"Quote, Application",,MN 12/5/22: New rule for AZ.
+Condition 2 - Unacceptable Vehicles Conditions,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PRIS,NSPA,X,YES,NO,YES,YES,YES,NO,YES,YES,YES,NO,YES,YES,NO,NO,YES,NO,NO,YES,YES,Underwriting,Warning,If vehicle age > 30,Vehicles older than 30 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 4/27/2023 - Remove for OH-FR SJS PRISUAT-1584
+LE 6/09/2025- Remove for OK GW-3172
+LE 6/12/2025- Remove TN GW-3777"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,NO,Underwriting,Warning,If vehicle age > 30 35,Vehicles older than 30 35 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"MN 12/13/22: New rule for IN
+LE 6/12/2025- Add for TN GW-3777"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,YES,NO,NO,NO,NO,NO,Underwriting,Warning,If vehicle age > 30 Model Year < 1970,Vehicles produced prior to 1970 are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,MN 12/14/22: New rule for KS-B
+PRIS,NSPA,X,NO,YES,NO,YES,YES,NO,YES,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"In IA, this rule should only apply when Broad Form Named Driver Endorsement = No
+
+If number of vehicles > than number of drivers by more than 1, do the following:
+* Order the vehicles from lowest to highest rating. (See driver assignment logic for how this is determined).  The insured is entitled to one excess vehicle without surcharge, all remaining excess vehicles should be marked as unacceptable. 
+
+Example 1: Policy has 1 driver and 3 vehicles. Ranked lowest to highest rating:
+* Vehicle 1 is not unacceptable and this is the lowest rated vehicle.
+* Vehicle 2 is not unacceptable. (This is their one allowed excess vehicle).
+* Vehicle 3 is unacceptable and is the highest rated vehicle.
+
+Example 2: Policy has 1 driver and 5 vehicles. Ranked lowest to highest:
+* Vehicle 1 is not unacceptable and is the lowest rated vehicle.
+* Vehicle 2 is not unacceptable. (This is their one allowed excess vehicle).
+* Vehicle 3 is unacceptable.
+* Vehicle 4 is unacceptable.
+* Vehicle 5 is unacceptable and is the highest rated vehicle.
+
+Example 3: Policy has 2 drivers and 5 vehicles. Ranked lowest to highest:
+* Vehicle 1 is not unacceptable and is the lowest rated vehicle.
+* Vehicle 2 is not unacceptable.
+* Vehicle 3 is not unacceptable. (This is their one allowed excess vehicle).
+* Vehicle 4 is unacceptable.
+* Vehicle 5 is unacceptable and is the highest rated vehicle.
+",Business with more than one excess vehicle is ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 4/27/2023 - Remove all states except IA
+LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 9/09/2024- Added WV GW-1644"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If Broad Form Named Driver Endorsement = Yes and if number of vehicles > 3,Business with more than three vehicles are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",,"MN 12/13/22: New rule for Broad Form policies in IA.
+MN 3/13/23: Updated to be a Validation Error and removed logic for setting the Unacceptable Vehicle indicator."
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Underwriting,Warning,If Make = Suzuki and Model = Samurai,Suzuki Samurai vehicles are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,JAO 4/27/2023 - Remove OH-FR SJS PRISUAT-1584
+PRIS,NSPA,X,NO,NO,NO,NO,YES,NO,YES,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,YES,YES,Underwriting,Warning,"If (Model contains the words ""Limited"" or ""Special"") AND (Policy Year - Model Year <= 25 and Policy Year - Model Year >= 20) AND (Other Than Collision Deductible <> ""No Coverage"" and Collision Deductible <> ""No Coverage"")",Limited and Specialized Edition vehicles ages 20 to 25 years are ineligible for Collision and Other Than Collision,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"MN 12/15/22: New rule for AZ Road Warrior
+JAO 4/27/2023 - Add for OH Maverick SJS 5.23.23 PRISUAT-1585
+LE 6/12/2025- Added TN GW-3777"
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,If vehicle use = Delivery or TNC,Vehicle use is ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,If (vehicle use = 'Business' or 'Business with TNC' or 'Business with Delivery' or 'Business with TNC and Delivery') AND (Broad Form = Yes),Broad Form Business Use is not allowed.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,MN 12/13/22: New rule for IA Broad From policies
+PRIS,NSPA,X,YES,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,"If gross vehicle weight > 25,000
+","Vehicles weighing more than 25,000 lbs. are ineligible for this program.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,
+PRIS,NSPA,X,NO,NO,NO,YES,YES,NO,NO,YES,NO,NO,NO,YES,YES,NO,NO,NO,NO,YES,YES,Underwriting,Warning,"If gross vehicle weight > 15,000","Vehicles weighing more than 15,000 lbs. are ineligible for this program.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 4/27/2023 - Remove OH-FR SJS PRISUAT-1584
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Removed for WV GW-1644
+LE 6/12/2025- Removed for TN GW-3777"
+PRIS,NSPA,X,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,YES,YES,YES,NO,NO,Underwriting,Warning,"If gross vehicle weight > 10,000
+","Vehicles weighing more than 10,000 lbs. are ineligible for this program.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,
+PRIS,NSPA,X,YES,YES,YES,YES,NO,NO,NO,NO,NO,NO,YES,YES,YES,YES,YES,YES,YES,NO,NO,Underwriting,"Warning
+","If vehicle age > 20, error if Other Than Collision and Collision are added",Other Than Collision and Collision aren't eligible for vehicles older than 20 years of age.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 4/27/2023 - Remove for OH Maverick 
+SJS 5.23.23 PRISUAT-1585
+JAO 7/17/2023 - Remove for MO Maverick
+LE 6/12/2025- Removed for TN GW-3777"
+PRIS,NSPA,X,NO,NO,NO,NO,YES,NO,YES,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,YES,YES,Underwriting,"Warning
+","If vehicle age > 20 25, error if Other Than Collision and Collision are added",Other Than Collision and Collision aren't eligible for vehicles older than 20 25 years of age.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"MN 12/13/22: New rule for AZ
+JAO 4/27/2023 - Add for OH Maverick 
+SJS 5.23.23 PRISUAT-1585
+JAO 7/17/2023 - Add for MO Maverick
+LE 6/12/2025- Added TN GW-3777"
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,"If vehicle cost new value > $35,000, error if Other Than Collision and Collision are added","Other Than Collision and Collision aren't eligible for vehicles with a value greater than $35,000.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,NO,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Underwriting,Warning,"If vehicle cost new value > $50,000, error if Other Than Collision and Collision are added","Other Than Collision and Collision aren't eligible for vehicles with a value greater than $50,000.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 6/12/2025- Removed for TN GW-3777"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,YES,YES,NO,YES,YES,YES,YES,Underwriting,Warning,"If 2010 vehicle or older, and OTC Symbol >21 AND Coverage “OTC” is on vehicle, then set Unacceptable Vehicle Indicator = Yes and display warning message ",Vehicles with Model Year 2010 and prior with Other Than Collision Symbol greater than 21 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,YES,YES,NO,YES,YES,YES,YES,Underwriting,Warning,"If Vehicle Year <= 2010 AND Collision Symbol > 21 AND Coverage “COLL” is on vehicle, then set Unacceptable Vehicle Indicator = Yes and display warning message ",Vehicles with Model Year 2010 and prior with Collision Symbol greater than 21 are not acceptable for this program,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,YES,YES,YES,YES,Underwriting,Warning,"If Vehicle Year <= 2010 AND Collision Symbol > 21 AND Coverage “OTC” is on vehicle, then set Unacceptable Vehicle Indicator = Yes and display warning message",Vehicles with Model Year 2010 and older with Collision Symbol greater than 21 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 6/12/2025- Remvoed forTN GW-3777"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,YES,YES,NO,YES,YES,YES,YES,Underwriting,Warning,"If 2011 vehicle or newer, and OTC Symbol > 45 AND Coverage “OTC” is on vehicle, set Unacceptable Vehicle Indicator = Yes and display message.",Vehicles with Model Year 2011 and newer with Other Than Collision Symbol greater than 45 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,YES,YES,NO,YES,YES,YES,YES,Underwriting,Warning,"If Vehicle Year >= 2011 AND Collision Symbol > 45 AND Coverage “COLL” is on vehicle, then set Unacceptable Vehicle Indicator = Yes and display warning message",Vehicles with Model Year 2011 and newer with Collision Symbol greater than 45 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,YES,YES,YES,YES,Underwriting,Warning,"If Vehicle Year >= 2011 AND Collision Symbol > 45 AND Coverage “OTC” is on vehicle, then set Unacceptable Vehicle Indicator = Yes and display warning message",Vehicles with Model Year 2011 and newer with Collision Symbol greater than 45 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 6/12/2025- Removed for TN GW-3777"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,YES,NO,NO,YES,YES,YES,YES,Underwriting,Warning,"If 2010 vehicle or older, and ""OTC"" OR ""COL"" Symbol >23 AND Coverage “OTC” OR ""COL"" is on vehicle AND noSymbolInd.equalsIgnoreCase(""Yes""), then set Unacceptable Vehicle Indicator = Yes and display warning message ",2010 or older vehicles are ineligible for this program with a Collision or Other Than Collision Symbol greater than 23,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,YES,NO,NO,YES,YES,YES,YES,Underwriting,Warning,"If 2011 vehicle or newer, and ""OTC"" OR ""COL"" Symbol >53 AND Coverage “OTC” OR ""COL"" is on vehicle AND noSymbolInd.equalsIgnoreCase(""Yes""), then set Unacceptable Vehicle Indicator = Yes and display warning message ",2011 or newer vehicles are ineligible for this program with a Collision or Other Than Collision Symbol greater than 53.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Vehicle Rating Method = Value AND
+Vehicle Retail Value > $50,000 AND
+Coverage ""OTC"" is on vehicle, trigger warning message","Other Than Collision and Collision aren't eligible for vehicles with a value greater than $50,000.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Vehicle Rating Method = Symbol AND 
+Vehicle Model Year = 2010 or older AND
+OTC Symbol >21 AND
+Coverage “OTC” is on vehicle, trigger warning message",Vehicles with Model Year 2010 and prior with Other Than Collision Symbol greater than 21 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Vehicle Rating Method = Symbol AND 
+Vehicle Model Year = 2010 or older AND
+COL Symbol >21 AND
+Coverage “COL” is on vehicle, trigger warning message",Vehicles with Model Year 2010 and prior with Collision Symbol greater than 21 are not acceptable for this program,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Vehicle Rating Method = Symbol AND 
+Vehicle Model Year = 2010 or older AND
+COL Symbol >21 AND
+Coverage “OTC” is on vehicle, trigger warning message",Vehicles with Model Year 2010 and prior with Collision Symbol greater than 21 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Vehicle Rating Method = Symbol AND 
+Vehicle Model Year = 2011 or newer AND
+OTC Symbol >45 AND
+Coverage “OTC” is on vehicle, trigger warning message",Vehicles with Model Year 2011 and newer with Other Than Collision Symbol greater than 45 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Vehicle Rating Method = Symbol AND 
+Vehicle Model Year = 2011 or newer AND
+COL Symbol >45 AND
+Coverage “COL” is on vehicle, trigger warning message",Vehicles with Model Year 2011 and newer with Collision Symbol greater than 45 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Vehicle Rating Method = Symbol AND 
+Vehicle Model Year = 2011 or newer AND
+COL Symbol >45 AND
+Coverage “OTC” is on vehicle, trigger warning message",Vehicles with Model Year 2011 and newer with Collision Symbol greater than 45 are not acceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Vehicle Rating Method = Symbol AND
+Vehicle Model Year = 2010 vehicle or older AND
+""OTC"" OR ""COL"" Symbol >23 AND 
+Coverage “OTC” OR ""COL"" is on vehicle AND noSymbolInd.equalsIgnoreCase(""Yes""), trigger warning message",2010 or older vehicles are ineligible for this program with a Collision or Other Than Collision Symbol greater than 23,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Vehicle Rating Method = Symbol AND
+Vehicle Model Year = 2011 or newer AND
+""OTC"" OR ""COL"" Symbol >53 AND 
+Coverage “OTC” OR ""COL"" is on vehicle AND noSymbolInd.equalsIgnoreCase(""Yes""), trigger warning message",2011 or newer vehicles are ineligible for this program with a Collision or Other Than Collision Symbol greater than 53.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"JAO 7/17/2023 - for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,YES,NO,YES,NO,YES,NO,YES,YES,YES,YES,NO,YES,NO,NO,YES,YES,YES,YES,YES,Validation,Warning,"If vehicle = any of the vehicles on the vehicle list, error if COLL or OTC coverage are added",Vehicle is ineligible for Collision and Other Than Collision.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Unacceptable Vehicle Indicator should not = Yes; this has been verified in testing PRISUAT-191,"LE 11/21/23- AZ requirements PRISUAT-1834
+LE 6/12/2025- Added TN GW-3777"
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Other Than Collision and Collision are selected, BI and PD cannot be rejected",Vehicles with Other than Collision/Collision must have Bodily Injury and Property Damage coverage.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",No Impact to Unacceptable Vehicle Indicator,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"On New Business, Rewrite New transactions only: 
+If Unacceptable Vehicle Indicator is Yes, and ""Unacceptable Vehicle Override (eligibility only)” is not checked, display this error message for each vehicle that qualifies for these conditions.",Vehicle # <#>:  Not eligible for this program,"Quote, Application - 
+New Business, Rewrite-New","No impact to Unacceptable Vehicle Indicator
+but uses the indicator as a criteria to run the rule",JAO 4/27/2023 -Remove for OH-FR - no vehicles on FR Bond  SJS PRISUAT-1584
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,"If the response to this Underwriting Question = Yes, an error message should be displayed and follow unacceptable risk procedures.
+
+Question: Is any vehicle used as a public or livery conveyance, including any use of the vehicle in conjunction with any transportation network applications or companies (TNC) or as they are sometimes also known as rideshare applications, companies or any other livery companies including the transportation of individuals or any other livery including but not limited to packages, mailings, deliveries, products, food or tangible items for a fee?*",Vehicles used for TNC or Delivery are unacceptable for this program.​,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes on every vehicle,
+PRIS,NSPA,X,,NO,,NO,YES,NO,NO,YES,NO,NO,,,,,,,,,,Underwriting,Warning,"If the question ""Does the title for this vehicle have any Salvage History including a Rebuilt or Flood Designation?' is YES, AND vehicle has OTC or COL coverage, trigger warning.","Vehicles with Salvage History, including a Rebuilt or Flood Designation, are unacceptable for Other Than Collision and Collision Coverage.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes on every vehicle,"JAO 4/27/2023 - Add rule for OH Maverick SJS 5.23.23 PRISUAT-1585
+JAO 7/17/2023 - Add rule for MO Maverick PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Removed for WV GW-1644"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If the VEHICLE TITLE HISTORY = Flood or Salvage, trigger warning",Vehicles with flood or salvage history are unacceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes on every vehicle,"LE 11/16/23- AZ requirements PRISUAT-1834
+LE 9/09/2024- Added WV GW-1644
+LE 6/12/2025- Added TN GW-3777"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If the VEHICLE TITLE HISTORY = Rebuilt AND vehicle has OTC or COLL coverage, trigger warning",Vehicles with Rebuilt Designation are unacceptable for Other Than Collision and Collision Coverage.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes on every vehicle,"LE 11/16/23- AZ requirements PRISUAT-1834
+LE 9/09/2024- Added WV GW-1644
+LE 6/12/2025- Added TN GW-3777"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Error,"If Vehicle/Risk Question ""Does <Vehicle Make Model VIN> have special equipment i.e. special paint, sound system, or other customizations? (If “Yes”, explain)"" = NO, and
+Special Equipment is included on vehicle, trigger error","If Special Equipment Coverage is included, the Special Equipment question must be YES.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",NO,"JAO 2/15/2024 - Added rule based on revised application questions - PRISUAT-1834 / PRISUAT-1833
+LE 9/09/2024- Added WV GW-1644
+LS 01/13/2025-Removed quote level.
+LE 6/12/2025- Added TN GW-3777"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Error,"If Vehicle/Risk Question ""Is <Vehicle Make Model VIN> used for business? (If “Yes”, explain and list all employees)"" = YES, and
+Vehicle Use <>
+- Business
+- Business with TNC
+- Business with Delivery, or
+- Business with TNC and Delivery","If the Business Use question is YES, the Vehicle Use for at least one this vehicle must include Business.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",NO,"JAO 2/15/2024 - Added rule based on revised application questions - PRISUAT-1834 / PRISUAT-1833
+LE 6/27/2024- Updated message PRISUAT-1834
+LE 9/09/2024- Added WV GW-1644
+LS 01/13/2025-Removed quote level. 
+LE 6/12/2025- Added TN GW-3777"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Error,"If Vehicle/Risk Question ""Is <Vehicle Make Model VIN> used for business? (If “Yes”, explain and list all employees)"" = NO, and
+Vehicle Use =
+- Business
+- Business with TNC
+- Business with Delivery, or
+- Business with TNC and Delivery","If the Business Use question is NO, the Vehicle Use cannot include Business.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",NO,"JAO 2/15/2024 - Added rule based on revised application questions - PRISUAT-1834 / PRISUAT-1833
+LE 9/09/2024- Added WV GW-1644
+LS 01/13/2025-Removed quote level.
+LE 6/12/2025- Added TN GW-3777"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If the answer to the ""Mexico"" Underwriting Question is YES, trigger warning",This policy does NOT extend coverage to accidents or losses in Mexico. ,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",NO,JAO 2/15/2024 - Added rule based on revised application questions - PRISUAT-1834 / PRISUAT-1833
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Make = Tesla, error if COLL or OTC coverage are added",Vehicle is ineligible for Collision and Other Than Collision.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Vehicle Indicator to Yes,"LE 6/09/2025- Added for OK GW-3172
+AF 07/01/2025 - Added for WI GW-4143"
+Condition 3 - Unacceptable Driver Conditions,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,If the sum of Total Chargeable Points > 12,Drivers with Total Chargeable Points greater than 12 are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Underwriting,Warning,If the sum of Total Chargeable Points > 16,Drivers with Total Chargeable Points greater than 16 are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,For Driver's where age < 21 AND Total Chargeable Points > 6,Drivers Under 21 with more than 6 Total Chargeable Points in the past 3 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,YES,NO,YES,YES,YES,YES,YES,Underwriting,Warning,For Driver's where age < 21 AND Total Chargeable Points > 8,Drivers Under 21 with more than 8 Total Chargeable Points in the past 3 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,For Driver's where age < 21 Years Years Licensed < 5 AND Total Chargeable Points > 8,Drivers Under 21 with less than 5 Years Experience with more than 8 Total Chargeable Points in the past 3 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,MN 12/13/22: New rule for KS Maverick.
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,"For each listed driver, total losses > 2 AND Ignore Indicator is not checked",Drivers with more than 2 Total Losses in the past 3 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,NO,YES,YES,YES,YES,YES,Underwriting,Warning,"For each listed driver, where loss date < term effective date - 3 yr, AND total losses > 3 AND Ignore Indicator is not checked
+",Drivers with more than 3 Total Losses in the past 3 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"For each listed driver, where loss date < term effective date - 3 yr, AND total losses >= 3 AND Ignore Indicator is not checked
+",Drivers with more than 3 or more Total Losses in the past 3 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,MN 12/14/22: New rule for KS Benchmark.
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"For each listed driver, where loss date < term effective date - 1 yr, AND total losses > 1 AND Ignore Indicator is not checked",Drivers with more than 1 Total Loss in the past 12 Months are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,"For each listed driver, where loss date < term effective date - 1 yr, AND total losses > 1 2 or more at fault losses AND Ignore Indicator is not checked",Drivers with more than 1 Total Loss 2 or more at fault losses in the past 12 Months are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,MN 12/14/22: New rule for TX Lonestar Maverick
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,NO,YES,YES,YES,YES,YES,Underwriting,Warning,"For each listed driver, where loss date < term effective date - 1 yr, AND total losses > 2 AND Ignore Indicator is not checked",Drivers with more than 2 Total Losses in the past 12 Months are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,"If violation = ""Intermediate"" AND infraction count >3 
+
+Current Configuration as of 9/23/20
+DriverPoints:  All must apply: 
+Infraction Status=""Active""
+Infraction Classification:  Intermediate
+IgnoreInd = No
+If > 3 of these, we display msg
+",Drivers with more than 3 Intermediate violations in the past 3 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,"If violation = ""Minor"" AND infraction count >3 
+
+Current Configuration as of 9/24/20
+DriverPoints:  All must apply: 
+Infraction Status=""Active""
+Infraction Classification:  Minor
+IgnoreInd = No
+If > 3 of these, we display msg
+",Drivers with more than 3 Minor violations in the past 3 years are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,NO,YES,YES,YES,YES,YES,Underwriting,Warning,"If driver's license status = Revoked or Cancelled 
+
+Current Configuration as of 9/23/20
+All must apply: 
+Driver:  Active driver (not non driver) and license status = Revoked, or Cancelled
+Display msg",Drivers with a License Status of Revoked or Cancelled are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If driver's license status = Revoked or Cancelled or No License
+
+All must apply: 
+Driver:  Active driver (not non driver) and license status = Revoked, Cancelled, or No License
+Display msg","Drivers with a License Status of Revoked, Cancelled, or No License are ineligible for this program.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,MN 12/15/22: New rule for KS Benchmark
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,"If driver's license status = Revoked or Cancelled 
+
+All must apply: 
+Driver:  Active driver (not non driver) and license status = Revoked, or Cancelled
+Display msg",Drivers with a License Status of Revoked or Cancelled are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,MN 12/14/22: New rule for TX Lonestar Maverick
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,Underwriting,Warning,If driver’s license status = Expired and Full-Time Active Military = No,Expired licenses are considered unacceptable unless the driver is full-time active military.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,MN 12/15/22: New rule for KS Benchmark
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,Underwriting,Warning,If driver’s license status = Suspended and SR22 = No,Suspended licenses are considered unacceptable unless the driver has an SR22.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,MN 12/15/22: New rule for KS Benchmark
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,NO,NO,NO,NO,YES,YES,YES,YES,Underwriting,Warning,"If driver's license state = Minnesota, Michigan, Kansas, Texas, Arkansas, Delaware, Maryland, Massachusetts, New Jersey, New York or Kentucky",Drivers with a <License State> License are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,"JAO 7/19/2023 - Remove rule for MO Maverick (MO allows KS Licenses)
+SJS 9.8.23 PRISUAT-1783
+LE 9/09/2024- Added WV GW-1645"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,YES,YES,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If driver's license state = Minnesota, Michigan, Kansas, Texas, Arkansas, Delaware, Maryland, Massachusetts, New Jersey, New York or Kentucky",Drivers with a <License State> License are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,"MN 12/14/22: Variation of above rule to allow Kansas license in KS.
+JAO 7/19/2023 - Add MO Maverick 
+SJS 9.8.23 PRISUAT-1783
+LE 9/09/2024- Removed for WV GW-1645"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,Underwriting,Warning,"If driver's license state = Minnesota, Michigan, Kansas, Texas, Arkansas, Delaware, Maryland, Massachusetts, New Jersey, New York or Kentucky",Drivers with a <License State> License are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",Criteria as documented in column L sets Unacceptable Driver Indicator to Yes,MN 12/14/22: Variation of above rule to allow Arkansas license in AR.
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If infraction code FLEE or RACE is listed, and neither the ignore indicator nor  the ""Unacceptable Driver Override is checked
+For Endorsement, Renewal Change, Rewrite Renewal:  If change is to add a driver with these infractions and ""Unacceptable Driver Override is not checked
+
+This is intended to be an Error and is not a role associated with the Unacceptable Driver indicator or Unacceptable Surcharge, but the override indicator can be used to allow such types of infractions",Drivers with Fleeing or attempting to elude a police officer OR Speed contest or racing violations are ineligible for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",No impact to Unacceptable Driver Indicator,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"On New Business, Rewrite New transactions only: 
+If Unacceptable Driver Indicator is Yes, and ""Unacceptable Driver Override (eligibility only)” is not checked, display this error message for each driver that qualifies for these conditions.",Driver # <#>:  Not eligible for this program,"Quote, Application - 
+New Business, Rewrite-New","No impact to Unacceptable Driver Indicator
+but uses the indicator as a criteria to run the rule",
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Underwriting,Warning,"On transactions mentioned:  
+if the combination exists:  
+if the sum of the below infractions is > 1:  
+Count infractions where code = ""OWI or OWIACC"" 
+
+(If infraction code = ""OWI or OWIACC"" 
+(Infraction Status=""Active"" >> do not count Deleted OWI/OWIACC
+IgnoreInd = No or Yes (we count these for this rule no matter if ignored or not)",Number of DWI/DUI Convictions is not acceptable.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal","Criteria as documented in column L sets Unacceptable Driver Indicator to Yes
+(all transactions)",
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,"On transactions mentioned:  
+if the combination exists:  
+if the sum of the below infractions is > 1:  
+Count infractions where violation classification = ""Major"" 
+Count infractions where code = ""OWI or OWIACC"" 
+
+Either must apply: 
+(Infraction Status=""Active"", 
+IgnoreInd = No, 
+Infraction Classification:  Major)
+OR
+(If infraction code = ""OWI or OWIACC"" 
+(Infraction Status=""Active"" >> do not count Deleted OWI/OWIACC
+IgnoreInd = No or Yes (we count these for this rule no matter if ignored or not)",Number of Major Violations or DWI/DUI Convictions is not acceptable.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal","Criteria as documented in column L sets Unacceptable Driver Indicator to Yes
+(all transactions)",
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Underwriting,Warning,If driver has Infraction = DWI or DUI conviction in conjuction with an at-fault accident,Drivers with a DUI/DWI conviction associated with an at fault accident are unacceptable.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal","Criteria as documented in column L sets Unacceptable Driver Indicator to Yes
+(all transactions)",MN 12/14/22: New rule for TX Lonestar Maverick
+PRIS,NSPA,X,NO,YES,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,Validation,Warning,If License State = LA (Louisiana),Drivers with a Louisiana Driver's License are unacceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal","Criteria as documented in column L sets Unacceptable Driver Indicator to Yes
+(all transactions)","JAO 7/27/2022 - Removing rule for WI ONLY
+
+MN 11/22/22: Jill confirmed this is not needed in OH and AZ as well. PRISUAT-1584 andPRISUAT-1585
+
+MN 12/15/22: Per Jill, OK and AR are the only states where they currently plan to have this rule.
+
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Warning,If License State = LA (Louisiana),Drivers with a Louisiana License are ineligible for this program unless acceptable proof of Texas residency is provided.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal","Criteria as documented in column L sets Unacceptable Driver Indicator to Yes
+(all transactions)",
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Warning,"If License State <> TX or LA
+
+DO NOT RUN IF ATTACHMENT TYPE ""Approved Driver's License"" OR ""Approved Proof of Residency"" is attached in the policy file
+
+DO NOT RUN IF TASKS PolicyTask4019 AND PolicyTask4020 ARE CLOSED",Drivers with an Out of State License must submit an in-state license and proof of residency within 90 days to avoid underwriting action.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",NO,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Warning,"If License State <> OK, PA, Policy State, MN, MI, KS, TX, AR, DE, MD, MA, NJ, NY, KY
+
+DO NOT RUN IF ATTACHMENT TYPE ""Approved Driver's License"" OR ""Approved Proof of Residency"" is attached in the policy file
+
+DO NOT RUN IF TASKS PolicyTask4022 AND PolicyTask4023 ARE CLOSED",Drivers with an Out of State License must submit an in-state license and proof of residency within 90 days to avoid underwriting action.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",NO,"JAO 7/26/2022 - Updated rules to not run when approved attachment is received per PRISPROD-1034
+JAO 7/27/2022 - Removed OK/PA and changed rule to enact to ""policy state""
+
+JAO 7/28/2022 - Updated rule to NOT run if associated tasks are closed per PRISPROD-1034
+JAO 7/19/2023 - Removed MO Maverick (MO allows KS License)
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 9/09/2024- Added WV GW-1645"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Warning,"If License State <> Policy State, MN, MI, TX, AR, DE, MD, MA, NJ, NY, KY
+
+DO NOT RUN IF ATTACHMENT TYPE ""Approved Driver's License"" OR ""Approved Proof of Residency"" is attached in the policy file
+
+DO NOT RUN IF TASKS PolicyTask4022 AND PolicyTask4023 ARE CLOSED",Drivers with an Out of State License must submit an in-state license and proof of residency within 90 days to avoid underwriting action.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Renewal Activate
+Rewrite Renewal",NO,"JAO 7/19/2023 - Added rule for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/09/2024- Removed for WV GW-1645"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If SR22 is changed from NO to YES on Endorsement transaction AND policy status is Cancel Notice, trigger warning",Policy is pending cancellation. SR22 will not be filed until policy is reinstated.,Endorsement,NO,JAO 7/5/2022 - Added based on TX/OK/PA rule per PRISPROD-856 & PRISUAT-1208
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"If 2 or more drivers have the same Driver's License Number, trigger error message",<Driver Name> must have a different License Number than <Driver Name>.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",NO,"JAO 9/22/2022 - Added rule for duplicate drivers license number - internal issue #3302
+JAO 4/27/2023 - Remove rule for OH-FR SJS 5.23.23 PRISUAT-1584"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"If Birth Day YEAR is less than 1900, fire error.",Please confirm date of birth for <Driver's Name>. Driver's age is listed as <age>.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",NO,JAO 10/17/2022 - PRISPROD-1337
+PRIS,NSPA,X,NO,NO,NO,NO,YES,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If number of drivers > than number of vehicles by more than 3, trigger warning message",Risks with more than three excess drivers are unacceptable for this program.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",Yes,"JAO 4/27/2023 - Add rule for OH Maverick SJS 5.23.23 PRISUAT-1585
+LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 9/10/2024- Added WV GW-1645
+LE  6/12/2025- Added TN GW-3790"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"If Driver's License State = OHIO, and SR22 = YES, trigger error",Ohio SR22 for <Driver Name> can only be filed on a 12 month policy term.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",NO,"JAO 10/31/2023 - Issue #4243
+LE 9/10/2024- Removed with PRISPROD-2229"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Error,"If Driver Question ""Is <Driver First Name> <Driver Last Name> not properly licensed? (If ""Yes"", explain)"" = YES and Driver License Status = VALID, trigger error","If ' Is <Driver First Name> <Driver Last Name> not properly licensed? ' is Yes, Driver's License Status cannot be VALID.","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",NO,"JAO 2/16/2024 - Add rule based on revised AZ Application - PRISUAT-1834; PRISUAT-1833
+LE 9/10/2024- Added WV GW-1645
+LS-01/13/2025-Removed quote level.
+LE 6/12/2025- Added TN GW-3790"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Error,"If Driver Question ""In the past three (3) years, have any accidents or moving violations for <Driver First Name> <Driver Last Name>, including those involving a parked car or hit and run NOT been listed on the Application? (If “Yes”, explain)"" = YES, trigger error","If ' In the past three (3) years, have any accidents or moving violations for <Driver First Name> <Driver Last Name>, including those involving a parked car or hit and run NOT been listed on the Application? (If “Yes”, explain) ' is Yes, all accidents and moving violations must be listed on the application. ","Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",NO,"JAO 2/16/2024 - Add rule based on revised AZ Application - PRISUAT-1834; PRISUAT-1833
+LE 9/10/2024- Added WV GW-1645
+LS-01/13/2025-Removed quote level.
+LE 6/12/2025- Added TN GW-3790"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Warning,"If Driver Question ""Has <Driver First Name> <Driver Last Name> not listed their spouse on the driver section of the policy or excluded the spouse with a signed endorsement? (If “Yes”, explain) "" = YES, trigger warning",Married operators are required to list their spouse as a rated or excluded driver.,"Quote
+Application
+New Business
+Rewrite-New
+Endorsement
+Renewal Start
+Renewal Change
+Rewrite Renewal",NO,"JAO 2/16/2024 - Add rule based on revised AZ Application - PRISUAT-1834; PRISUAT-1833
+LE 9/10/2024- Added WV GW-1645
+LS-01/13/2025-Removed quote level.
+LE 6/12/2025- Added TN GW-3790"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Condition 4 - Driver Assignment Conditions,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If driver assignment overridden by a user, and if the same driver is assigned to more than one vehicle",Driver # <#>:  <First Name Last Name> cannot be assigned to more than one vehicle.,"Quote, Application",,JAO 4/27/2023 - Remove OH-FR - no driver/vehicle assignment SJS 5.26.23 PRISUAT-1584
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If driver assignment is overridden by a user, and the number of vehicles is < drivers, and higher rated drivers are not assigned to a vehicle, for example
+>> 2 vehicles, 5 drivers – Overridden and the 2 drivers that are assigned are not the highest rated drivers
+>> 2 vehicles, 5 drivers – Overridden and the excess vehicle class is used on any of the vehicles
+","The highest rated operators must be assigned to a vehicle. Please assign drivers to the vehicle they regularly operate in the following order: <Highest rated operator>, <Second highest rated operator>","Quote, Application",,JAO 4/27/2023 - Remove OH-FR - no driver/vehicle assignment SJS 5.26.23 PRISUAT-1584
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If driver assignment is overridden by a user, and if the number of vehicles is = > than drivers, and not all drivers are assigned to a vehicle, for example
+>> 2 vehicles, 2 drivers – Overridden and a driver is not assigned to a vehicle
+>> 3 vehicles, 2 drivers – Overridden and a driver is not assigned to a vehicle
+",Vehicle #<#>: Must be assigned to a listed driver.,"Quote, Application",,JAO 4/27/2023 - Remove OH-FR - no driver/vehicle assignment SJS 5.26.23 PRISUAT-1584
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If a Non Driver is assigned to a vehicle, wipe the driver ref from the vehicle so that the driver assignment logic can run.  Total Chargeable points associated with the Non Driver would need to be removed from the vehicle, and reconsideration of the Unacceptable Driver indicator would need to be done.",,,,JAO 4/27/2023 - Remove OH-FR - no driver/vehicle assignment SJS 5.26.23 PRISUAT-1584
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Condition  - Renewal Buy In Conditions,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If BasicPolicy.NoLapse = Yes, and Previous Carrier (existing field: BasicPolicy.PreviousCarrierCd) = “None”, display error message ","Prior Insurance Coverage exists, Previous Carrier cannot be None.","Quote, Application",,JAO 4/27/2023 - Remove OH-FR sjs5.26.23 PRISUAT-1584
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Payment Plan Validation Rules - Validation Rules Run specifically on Payment Information,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Carrier,Product,NSPA,,,,,,,,,,,,,,,,,,,,Rule Type,Error or Warning,Rule to Enact,Error or Warning Message to Display,"Run in Quick Quote, Quote, Application?",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"""Payment Type"" should be specified",Payment Type Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Automated"" payment method is selected, ""Bank Account Type"" is required",Bank Account Type Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Automated"" payment method is selected, ""Bank Name"" is required",Bank Name Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Automated"" payment method is selected, ""Bank Account Number"" is required",Account Number Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Automated"" payment method is selected, ""Routing Number"" is required",Routing Number Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,"Validation
+Underwriting",Error,"If ""Credit Card"" payment method is selected, ""Credit Card Number"" is required",Credit Card Number Required.,Application,,JAO 7/28/2022 - Changed to Underwriting Rule so rating will happen without ACH/CC info on automated pay plans
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If Make Payment amount is < 85% of amount due,Payment must be more than 85% of the amount due.,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If Do Not Reinstate indicator on Special Options screen = Yes AND user permissions for AllowSpecialOptionsReinstatePayment <> Yes, error and display message.",Payment cannot be accepted at this time. Please contact the Underwriting Department for additional information.,Policy,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If Payment Plan is changed and the ""suffix"" is different in the new pay plan, display error message.  For example, if a pay plan is updated from Direct Bill 6 Pay to Automated 6 Pay, then there should be no error message.  However, if a pay plan is updated from Direct Bill 6 Pay to Automated 6 Pay Equity, then there should be an error message.",Pay Plan Changes may affect the current invoice due,Policy,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Error,"If policy status = Cancelled OR Cancel Notice AND Cancel Reason = Non-Pay Dishonored Down Payment, trigger ERROR for Producer and Insured.
+DO NOT FIRE ERROR FOR POLICYCSR, UW1, UW2, UWMANAGER",Producers or Insureds are not allowed to make a payment when a policy is pending cancel or cancelled with the reason Dishonored Down Payment.,Policy,,JAO 7/7/2023 - Added rule per PRISPROD-1791
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Error,"If policy status = Cancelled AND Cancel Reason = Non-Pay NSF DP, trigger ERROR for Producer and Insured.
+DO NOT FIRE ERROR FOR POLICYCSR, UW1, UW2, UWMANAGER",Producers or Insureds are not allowed to make a payment when a policy is cancelled with the reason Dishonored Down Payment.,Policy,,LE 5/08/2025- Added rule for WV Dishonored DP on NB rule. GW-3383
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Underwriting,Error,"If policy status = Cancel Notice AND Cancel Reason = Non-Pay NSF DP AND Current due is not paid in full trigger ERROR for Producer and Insured.
+DO NOT FIRE ERROR FOR POLICYCSR, UW1, UW2, UWMANAGER",Replacement payment for Dishonored Down Payment must be paid in full. ,Policy,,LE 5/09/2025- Added rule for WV Dishonored DP on NB GW-3365
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If policy status = Cancelled and Cancel Reason = Non-Payment of Premium AND current date is on or after policy expiration date AND Submit Payment is clicked, trigger pop up warning",This payment does not guarantee reinstatement or renewal of coverage. Please contact the Underwriting Department with any questions.,Policy,,JAO 12/21/2023 - Add new pop-up confirmation BEFORE Submit Payment pop up - Issue #4364
+Validation Rules - Validation Rules Run specifically on State Driver's License Formats,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Carrier,Product,NSPA,,,,,,,,,,,,,,,,,,,,Rule Type,Error or Warning,Rule to Enact,Error or Warning Message to Display,"Run in Quick Quote, Quote, Application?",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,AL: License Format = 1-8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,AK: License Format = 1-7Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,AZ: 1 Alpha + 8 Numberic OR 9 Numberic,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,AR: 4-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,CA: 1Alpha+7Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,CO: 9Numeric or 1Alpha+3-6Numeric or 2Alpha+2-5Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,CT: 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,DE: 1-7Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,DC: 7Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,FL: 1Alpha+12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,GA: 7-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,HI: 1 Alpha+8Numeric OR 9 Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,ID: 2Alpha+6Numeric+1Alpha or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,IL: 1Alpha+11Numeric or 1Alpha+12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,IN: 1Alpha+9Numeric or 10Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,AF 3/27/25: Added per NTSI License Format List
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,IA: 9Numeric or 3Numeric+2Alpha+4Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,KS: 1Alpha+1Numeric+1Alpha+1Numeric+1Alpha or 1Alpha+8Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,KY: 1Alpha+8Numeric or 1Alpha+9Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,LA: 1-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,ME: 7Numeric or 7Numeric+1Alpha or 8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MD: 1Alpha+12Numeric or 2Alpha+11Numeric,State Driver's License format is incorrect.,"Quote, Application",,JAO 10/31/2023 - PRISPROD-1992
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MA: 1Alpha+8Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MI1Alpha+10Numeric or 1Alpha+12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MN: 1Alpha+12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MS: 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MO: 1Alpha+5-9Numeric or 1Alpha+6Numeric+R or 8Numeric+2Alpha or 9Numeric+1Alpha or 9Numeric or 3Numeric+1Alpha+6Numeric,State Driver's License format is incorrect.,"Quote, Application",,JAO 12/28/23 - PRISPROD-2180
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,MT: 1Alpha+8Numeric or 13Numeric or 9Numeric or 14Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NE: 1Alpha+6-8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NV: 9Numeric or 10Numeric or 12Numeric or X+8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"NH: 2Numeric+3Alpha+5Numeric
+3Alpha+8Numeric",State Driver's License format is incorrect.,"Quote, Application",,JAO 10/31/2023 - PRISPROD-1983
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NJ: 1Alpha+14Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NM: 8Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NY: 1Alpha+7Numeric or 1Alpha+18Numeric or 8Numeric or 9Numeric or 16Numeric or 8Alpha,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,NC: 1-12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,ND: 3Alpha+6Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,OH: 1Alpha+4-8Numeric or 2Alpha+3-7Numeric or 8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,OK: 1Alpha+9Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,OR: 1-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,PA: 8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,RI: 7Numeric or 1Alpha+6Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,SC: 5-11Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,SD: 6-10Numeric or 12Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,TN: 7-9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,TX: 7-8Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,UT: 4-10Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,VT: 8Numeric or 7Numeric+A,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,VA: 1Alpha+8-to-11Numeric or 9Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"WA: 1-7Alpha+any combination of Alpha, Numeric, or * for a total of 12 characters",State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,WV: 7Numeric or 1-2Alpha+5-6Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,WI: 1Alpha+13Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,WY: 9-10Numeric,State Driver's License format is incorrect.,"Quote, Application",,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Pre-Renewal Validations (These run when Pre-Automated Renewal validation task is run),,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"Include with Pre-Renewal Validation task:    
+
+Using the new renewal term effective date, Send TASK if changes made in the current term include any of the following: 
+
+•	Changes were made so that number of vehicles > than number of drivers by more than 1
+•	Changes were made so that vehicle use = Delivery or TNC
+•	Changes were made so that gross vehicle weight > 25,000
+•	Changes were made so that vehicle Retail Value > $35,000,  
+•	Changes were made so that vehicle = any of the vehicles on the vehicle list
+
+If any of the above is true, generate a task to the UW group to review the policy. At that point, they can decide to allow the policy to renew or follow steps for non-renewing. If they decided to do nothing the policy will follow the renewal start process as normal.
+",See Task worksheet,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Pre-Renewal Validation,,"Include with Pre-Renewal Validation task:    
+
+Using the new renewal term effective date, Send TASK if changes made in the current term include any of the following:
+
+If any of the following is true and the Unacceptable Driver Eligibility Override is unchecked OR the Unacceptable Vehicle Override is unchecked, generate a task to the UW group to review the policy. At that point, they can decide to allow the policy to renew or follow steps for non-renewing. If they decided to do nothing the policy will follow the renewal start process as normal.
+",See Task worksheet,,,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Pre-Renewal Validation,,Driver age 21 and over with more than 12 points in the past 3 years,,,,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Pre-Renewal Validation,,Driver age 21 and over with more than 16 points in the past 3 years,,,,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Pre-Renewal Validation,,Driver age under 21 with more than 6 points in the past 3 years,,,,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,YES,NO,YES,YES,YES,YES,YES,Pre-Renewal Validation,,Driver age under 21 with more than 8 points in the past 3 years,,,,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,Driver Years Licensed < 5 with more than 8 points in the past 3 years,,,,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"Driver with more than 2 accidents within the past 3 years, regardless of fault",,,,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,NO,YES,YES,YES,YES,YES,Pre-Renewal Validation,,"Driver with more than 3 accidents within the past 3 years, regardless of fault",,,,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"Driver with 3 or more accidents within the past 3 years, regardless of fault",,,,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"Driver with more than 1 accident in the past 12 months, regardless of fault",,,,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"Driver with 2 or more accidents in the past 12 months, regardless of fault",,,,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,NO,YES,YES,YES,YES,YES,Pre-Renewal Validation,,"Driver with more than 2 accidents in the past 12 months, regardless of fault",,,,
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"Driver with a sum of more than 1 DUI/DWI and ""Major"" violations in their complete driving history (also consider DUI/DWI with At Fault Accidents)",,,,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Pre-Renewal Validation,,Driver with more than 1 DUI/DWI in their complete driving history (also consider DUI/DWI with At Fault Accidents),,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,NO,YES,YES,YES,YES,YES,Pre-Renewal Validation,,Driver with a Cancelled or Revoked license status,,,,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"Driver with a Driver's License Status of any of the following: Cancelled, Revoked, or No License.",,,,
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Pre-Renewal Validation,,Driver with a Revoked license status,,,,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,NO,NO,NO,NO,YES,YES,YES,YES,Pre-Renewal Validation,,"Driver with a license from the following states: Minnesota, Michigan, Kansas, Texas, Arkansas, Delaware, Maryland, Massachusetts, New Jersey, New York, Kentucky",,,,"JAO 7/19/2023 - Remove for MO Maverick (MO allows KS licenses)
+SJS 9.8.23 PRISUAT-1783
+LE 9/10/2024- Added WV GW-1646"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,YES,YES,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"Driver with a license from the following states: Minnesota, Michigan, Kansas, Texas, Arkansas, Delaware, Maryland, Massachusetts, New Jersey, New York, Kentucky",,,,"JAO 7/19/2023 - Add for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 9/10/2024- Removed WV GW-1646"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,Pre-Renewal Validation,,"Driver with a license from the following states: Minnesota, Michigan, Kansas, Texas, Arkansas, Delaware, Maryland, Massachusetts, New Jersey, New York, Kentucky",,,,
+PRIS,NSPA,X,NO,NO,NO,NO,YES,NO,YES,NO,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,Risks where the number of drivers exceeds the number of vehicles by more than three,,,,"JAO 4/27/2023 - Added pre-renewal validation for OH Maverick SJS PRISUAT-1585
+LE 11/21/2023- AZ requirements
+LE 9/10/2024- Added WV GW-1646
+LE 6/12/2025- Added TN GW-3793"
+PRIS,NSPA,X,YES,NO,YES,YES,YES,NO,YES,YES,YES,NO,YES,YES,NO,NO,YES,NO,NO,YES,YES,Pre-Renewal Validation,,Vehicle over 30 years old,,,,"JAO 4/27/2023 - Remove OH-FR SJS PRISUT-1584
+LE 6/09/2025- Remove for OK GW-3172
+LE 6/12/2025- Removed for TN GW-3793"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,NO,Pre-Renewal Validation,,Vehicle over 35 years old,,,,LE 6/12/2025- Added TN GW-3793
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,YES,NO,NO,NO,NO,NO,Pre-Renewal Validation,,Vehicle Model Year < 1970,,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Pre-Renewal Validation,,Vehicle with a garaging address outside of Policy State,,,,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,Vehicle with a physical address outside of Policy State,,,,LE 11/21/2023- AZ requirements PRISUAT-1834
+PRIS,NSPA,X,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Pre-Renewal Validation,,Risks where the number of vehicles exceeds the number of drivers by more than 1,,,,JAO 4/27/2023 - Remove OH-FR SJS PRISUT-1584
+PRIS,NSPA,X,YES,YES,YES,YES,NO,NO,NO,NO,NO,NO,YES,YES,YES,YES,YES,YES,YES,NO,NO,Pre-Renewal Validation,,Vehicle with OTC/COL coverage over 20 years old,,,,"JAO 4/27/2023 - Remove OH Maverick SJS PRISUAT-1585
+JAO 7/19/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 6/12/2025- Removed for TN GW-3793"
+PRIS,NSPA,X,NO,NO,NO,NO,YES,NO,YES,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,YES,YES,Pre-Renewal Validation,,Vehicle with OTC/COL coverage over 25 years old,,,,"JAO 4/27/2023 - Add OH Maverick PRISUAT-1585
+JAO 7/19/2023 - Add for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 6/12/2025- Added TN GW-3793"
+PRIS,NSPA,X,,NO,NO,NO,YES,NO,YES,YES,YES,YES,,,,,,,,,,Pre-Renewal Validation,,"Vehicle with OTC/COL coverage aged 20-25 with ""Special"" or ""Limited"" in MODEL name",,,,"JAO 4/27/2023 - Add OH Maverick PRISUAT-1585
+JAO 7/19/2023 - Add for MO Maverick
+SJS 10.25.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 6/12/2025- Added TN GW-3793"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,YES,YES,NO,YES,YES,YES,YES,Pre-Renewal Validation,,Vehicle with a Model Year 2010 or prior with a symbol over 21  with OTC/COL coverage,,,,"JAO 7/19/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,NO,YES,NO,YES,NO,NO,NO,NO,NO,YES,YES,NO,YES,YES,NO,YES,YES,YES,YES,Pre-Renewal Validation,,Vehicle with a Model Year 2011 or newer with a symbol over 45  with OTC/COL coverage,,,,"JAO 7/19/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"If Vehicle Rating Method = Symbol
+Vehicle with a Model Year 2010 or prior with a symbol over 21  with OTC/COL coverage",,,,"JAO 7/19/2023 - Add for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"If Vehicle Rating Method = Symbol
+Vehicle with a Model Year 2011 or newer w+ith a symbol over 45  with OTC/COL coverage",,,,"JAO 7/19/2023 - Add for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,,,"Vehicle with a Value over $35,000 with OTC/COL coverage",,,,
+PRIS,NSPA,X,NO,YES,YES,YES,YES,NO,NO,NO,NO,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,Pre-Renewal Validation,,"Vehicle with a Value over $50,000 with OTC/COL coverage",,,,"JAO 7/19/2023 - Remove for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 6/12/2025- Removed for TN GW-3793"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"If Vehicle Rating Method = Value
+Vehicle with a Value over $50,000 with OTC/COL coverage",,,,"JAO 7/19/2023 - Add for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834"
+PRIS,NSPA,X,,NO,NO,NO,YES,NO,NO,YES,NO,NO,,,,,,,,,,Pre-Renewal Validation,,"Does the title for this vehicle have any Salvage History including a Rebuilt or Flood Designation?' is YES, AND vehicle has OTC or COL coverage",,,,"JAO 4/27/2023 - Add OH Maverick SJS PRISUAT-1585
+JAO 7/19/2023 - Add for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- remove for AZ PRISUAT-1834
+LE 9/10/2024- Removed WV GW-1646"
+PRIS,NSPA,X,,NO,NO,NO,YES,NO,YES,NO,YES,YES,,,,,,,,,,Pre-Renewal Validation,,"If the VEHICLE TITLE HISTORY = Flood or Salvage, trigger warning",,,,"JAO 4/27/2023 - Add OH Maverick SJS PRISUAT-1585
+JAO 7/19/2023 - Add for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 9/10/2024- Added WV GW-1646
+LE 6/12/2025- Added TN GW-3793"
+PRIS,NSPA,X,,NO,NO,NO,YES,NO,YES,NO,YES,YES,,,,,,,,,,Pre-Renewal Validation,,"If the VEHICLE TITLE HISTORY = Rebuilt AND vehicle has OTC or COLL coverage, trigger warning",,,,"JAO 4/27/2023 - Add OH Maverick SJS PRISUAT-1585
+JAO 7/19/2023 - Add for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 9/10/2024- Added WV GW-1646
+LE 6/12/2025- Added TN GW-3793"
+PRIS,NSPA,X,YES,NO,YES,NO,NO,NO,YES,YES,YES,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,"If vehicle = any of the vehicles on the vehicle list, error if COLL or OTC coverage are added",,,,"JAO 7/19/2023 - Add for MO Maverick
+SJS 9.8.23 PRISUAT-1783
+LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 6/12/2025- Added TN GW-3793"
+PRIS,NSPA,X,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Pre-Renewal Validation,,If Make = Tesla and vehicle has COLL or OTC coverage ,,,,LE 6/09/2025- Added for OK GW-3172
+PRIS,NSPA,X,,,,,,,,,,,,,,,,,,,,Pre-Renewal Validation,,"Include with Pre-Renewal Validation task:   
+
+Using the new renewal term effective date, Send TASK if changes made in the current term include any of the following: 
+•	A change in Total Chargeable Points: and If the sum of Total Chargeable Points will be >16 (this includes losses from the current term that have not been pulled in at renewal)
+•	A change in Total Chargeable Points: and if Driver's where age < 21 AND Total Chargeable Points will be > 8 (this includes losses from the current term that have not been pulled in at renewal)
+•	A change in Total Chargeable Losses: and for each listed driver, total chargeable losses will be > 3 (this includes losses from the current term that have not been pulled in at renewal)
+•	A change in Total Chargeable Losses: and For each listed driver, where loss date < term effective date - 1 yr, AND total chargeable losses will be > 2 (this includes losses from the current term that have not been pulled in at renewal)
+•	A change in infractions: If violation = ""Intermediate"" AND infraction count >3 
+•	A change in infractions: If violation = ""Minor"" AND infraction count >3 
+•	A change in license status, If driver's license status = Revoked or Cancelled
+•	A change in infractions with code OWI or OWIACC:  or infractions with a violation classification of ""Major""  If infraction count of this combo >1  
+*  If driver's license state = Minnesota, Michigan, Kansas, Texas, Arkansas, Delaware, Maryland, Massachusetts, New Jersey, New York or Kentucky
+If any of the above are true, generate a task to the UW group to review the policy. At that point, they can decide to allow the policy to renew or follow steps for non-renewing. If they decided to do nothing the policy will follow the renewal start process as normal.
+",See Task worksheet,,,
+PRIS,NSPA,X,,,,,,,,,,,,,,,,,,,,Pre-Renewal Validation,,"Include with Pre-Renewal Validation task:
+
+Using the new renewal term effective date, Send TASK if changes made in the current term via endorsement, or renewal changes to include any of the following:
+
+License State = Louisiana",See Task worksheet,,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Pre-Renewal Validation,,"When Producer Status = Cancelled, Replaced by Producer is blank, and there is no valid License Class Code on Renewal Effective Date of the policy.",See Task worksheet,,,
+Other Customer-Specific Validation Rules,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Carrier,Product,NSPA,,,,,,,,,,,,,,,,,,,,Rule Type,Error or Warning,Rule to Enact,Error or Warning Message to Display,"Run in Quote, Application?","Unacceptable Driver/
+Unacceptable Vehicle Indicators",Comments/Changes
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Warning,"On any transaction, if user does not have authority, and they delete an infraction where source is from MVR, they will get a validation error: ",Motor Vehicle Report Infractions cannot be deleted.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,NO,NO,NO,NO,YES,NO,YES,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Non Driver Detail Birth Date < 16, set Non-Driver Type = Under Aged","If Non Driver is less than 16 years old, the Non-Driver Type must be set to Under Aged. - Driver #x","Quote, Application, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",,"LE 11/21/2023- AZ requirements PRISUAT-1834
+LE 9/10/2024- Added WV GW-1646
+LE 3/27/2025- Updated OK to Yes as it does display the error message"
+PRIS,NSPA,X,YES,YES,NO,NO,NO,NO,YES,NO,YES,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,Validation,Error,"If Non Driver Detail Birth Date > 16, Non-Driver Type cannot be Under Aged",Non-Drivers over age 16 cannot be classified as Under-Age. - Driver #x,"Quote, Application, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",,LE 3/28/2025- Added Rule to match current functionality per State
+PRIS,NSPA,X,NO,NO,YES,YES,YES,NO,NO,YES,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Non Driver Detail Birth Date < 16, automatically set Non-Driver Type = Under Aged",,"Quote, Application, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",,LE 3/27/2025- Added Rule to match current functionality per State
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Warning,Always display in the closeout screen prior to Issuance,The down payment is always due at policy issuance.,Issuance,,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,Display on Closeout Screen when Premium Amount is less than the required down payment,Down payment must be at least <amount due>.,Issuance,,JAO 1/10/2023 PRISPROD-1422
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If Additional Interest Vehicle checkbox is not selected,Additional Interest must be associated with a risk.,"Quote, Application",,
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If the Insured's Email Address on the Policy General page is blank, the Delivery Method must be ""Batch.""","The Insured's email address is blank. Please either provide an email address or change the Delivery Method to Batch Mail.
+Please enter a valid email address, or select Mail as the Delivery Preference.""","Quote, Application, Endorsement, Renewal Start",,JAO 10/19/2022 - PRISPROD-1341 - Updated error language
+PRIS,NSPA,X,NO,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,Validation,Error,"If Named Non-Owner Policy? = Yes AND a Relationship to Insured is not Husband, Wife, Spouse or Domestic Partner",Non-Owner Coverage is only available for the Named Insured and Spouse or Domestic Partner (where allowable). Please remove <Driver Name> to continue.,"Quote, Application, Endorsement",,"JAO 7/27/2022 - Remove rule. WI does not allow additional drivers/non-drivers on NNO policies
+JAO 9/27/2023 - PRISPROD-2032
+LE 6/24/2025- Removed WI GW-3922
+"
+PRIS,NSPA,X,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Named Non Owner Policy = Yes AND additional Driver or Non-Driver is added, error.",Non Owner Coverage is only available for the Named Insured. Please remove <Driver Name(s)> to continue.,"Quote, Application, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",,"JAO 7/27/2022 - Add rule WI Only - WI does not allow additional drivers/non-drivers on NNO policies
+JAO 9/27/2023 - PRISPROD-2032
+LE 6/24/2025- Added for WI GW-3922"
+PRIS,NSPA,X,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,"If Named Non-Owner Policy? = Yes AND Non-Driver Relationship to Insured is not Husband, Wife or Spouse",Non-Owner Coverage is only available for the Named Insured. Please remove  <Driver Name> to continue.,"Quote, Application, Endorsement, Renewal Changes, Renewal Start, Rewrite-Renewal",,LE 6/24/2025- Added for WI GW-3922
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If vehicle # greater than 1 and garaging address not the same for each vehicle.,"""Vehicles must be garaged at the same location""","Quote, Application",,
+PRIS,NSPA,X,NO,YES,NO,NO,YES,NO,NO,NO,NO,YES,NO,YES,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If Accident Prevention Course = Yes Date of course is required,"""Accident Prevention Course Completion Date Required - Driver #x""","Application, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, Rewrite-Renewal",,JAO 7/27/2022 - Remove rules for WI. WI does not have Accident Prevention Course
+PRIS,NSPA,X,NO,YES,NO,NO,YES,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If Accident Prevention Course = Yes Court order question required,"""Was this course taken pursuant to a court order resulting from a motor vehicle violation or an alcohol or drug-related offense?"" - Driver #x","Application, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, Rewrite-Renewal",,JAO 7/27/2022 - Remove rules for WI. WI does not have Accident Prevention Course
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If Accident Prevention Course = Yes Court order question required,"""Was this course taken pursuant to a court order or other governmental entity"" - Driver #x","Application, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, Rewrite-Renewal",,LE 6/12/2025- Added for TN GW-3798
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If Defensive Driving Discount = Yes Date of completion is required,"""Defensive Driving Completion Date Required - Driver #x""","Application, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, Rewrite-Renewal",,LE 9/10/2024- Added WV GW-1646
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,Validation,Error,If Defensive Driving Discount = Yes Court order question required,"""Was this course taken pursuant to a court order or other governmental entity?"" - Driver #x","Application, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, Rewrite-Renewal",,LE 9/10/2024- Added WV GW-1646
+PRIS,NSPA,X,NO,YES,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,If Physical Address does not equal Garaging Address,Physical Address and Garaging Address do not match,"New Business
+Rewrite New",,LE 11/21/2023- remove for AZ PRISUAT-1834
+PRIS,NSPA,X,NO,YES,NO,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Warning,If Physical Address does not equal Garaging Address,Physical Address and Garaging Address do not match,"Endorsement
+Renewal Changes
+Renewal Start
+Rewrite-Renewal
+Pre-Renewal (If processed after)",,LE 11/21/2023- remove for AZ PRISUAT-1834
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If policy is in CANCEL NOTICE status for Company or Insured cancel type, only UW1, UW2, UWManager should be allowed to make payment. All other users should trigger Error.",The policy is pending cancellation for <Company/Insured> Request. Unable to accept the payment. Please contact the Underwriting Department,Make Payment,,JAO 10/11/2022 - PRISPROD-1317
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If policy is in CANCELLED status for Company or Insured cancel type, only UW1, UW2, UWManager should be allowed to make payment. All other users should trigger Error.",The policy is cancelled for <Company/Insured> Request. Unable to accept the payment. Please contact the Underwriting Department,Make Payment,,JAO 10/11/2022 - PRISPROD-1074
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,NO,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Validation,Error,"If AI Type = Contents PLUS and a Vehicle is selected, trigger Error",Private Passenger Auto <Year Make Model> cannot be selected with Contents Plus Interest Type.,"New Business
+Rewrite New
+Endorsement
+Renewal Change
+Renewal Start
+Rewrite Renewal",,"JAO 10/11/2022 - PRISUAT-1382
+LE 11/21/2023- remove for AZ PRISUAT-1834"
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If UW Fee is added during transaction, display message",All fees added during this transaction will be included in the insured's upcoming monthly installment.,"New Business
+Rewrite New
+Endorsement
+Renewal Change
+Renewal Start
+Rewrite Renewal",,JAO 3/26/2024 PRISUAT-1941                                                                                             LE 5/13/2024 PRISPROD-2416
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If the question ""Is Garaging Addres Different Than Mailing?"" = YES, display message",Please confirm the Garaging Address since the Mailing Address has changed.,"New Business
+Rewrite New
+Endorsement
+Renewal Change
+Renewal Start
+Rewrite Renewal",,JAO 3/26/24 PRISPROD-2381
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If the Mailing Address and Billing Address do not match, display message",Please confirm the Billing Address since the Mailing Address has changed.,"New Business
+Rewrite New
+Endorsement
+Renewal Change
+Renewal Start
+Rewrite Renewal",,JAO 3/26/24 PRISPROD-2381
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,Underwriting,Warning,"If the Mailing Address and Physical Address do not match, display message",Please confirm the Physical Address since the Mailing Address has changed.,"New Business
+Rewrite New
+Endorsement
+Renewal Change
+Renewal Start
+Rewrite Renewal",,JAO 3/26/24 PRISPROD-2381
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,,,,,,,,,,Underwriting,Error,"If policy is in CANCELLED status for Non-Pay Cancel type AND the current date is more than 44 days past the cancellation effective date, only UW1, UW2, UWManager should be allowed to make payment. All other users should trigger Error.                                                                                                                   This applies to INow payments, Consumer Portal payments, and IVR payments.","Payments are not accepted on policies cancelled over 45 days. Please contact your agent.
+",Make Payment,,LE 6/11/2024- PRISPROD-2407
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,,,,,,,,,,Underwriting,Error,"If policy is in Expired/Future Expired status AND the current date is more than 44 days past the expiration date, only UW1, UW2, UWManager should be allowed to make payment. All other users should trigger Error.                               This applies to INow payments, Consumer Portal payments, and IVR payments.",Payments are not accepted on policies expired over 45 days. Please contact your agent.,Make Payment,,LE 6/11/2024- PRISPROD-2407
+PRIS,NSPA,X,YES,YES,YES,YES,YES,YES,YES,YES,YES,YES,,,,,,,,,,Underwriting,Error,"If policy is in CANCELLED status for Non-Pay Cancel Dishonored Down Payment type AND the current date is less than 44 days past the cancellation effective date, only UW1, UW2, UWManager should be allowed to make payment. All other users should trigger Error.                                                                                This applies to INow payments, Consumer Portal payments, and IVR payments.",Payments are not accepted on this policy. Please contact your agent.,Make Payment,,LE 6/11/2024- PRISPROD-2407
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Warning,"If Defensive Driving Completion Date is > 3 years than the effective date, set Defensive Driving Discount to No and display message",Defensive Driving Completion Date must be within the last 3 years - Driver #X. Accident Prevention Defensive Driving Discount has been set to NO.,"Application, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, Rewrite-Renewal",,"LE 10/02/2024- GW-1646
+LS 6/13/2025-Correcting warning message-GW-3818"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Warning,"If Defensive Driving Question is Yes, set Defensive Driving Discount to No and display message",Defensive Driving Discount cannot apply if the course was taken pursuant to a court order or other governmental entity - Driver #X. Accident Prevention Defensive Driving Discount has been set to NO.,"Application, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, Rewrite-Renewal",,"LE 10/15/2024- GW-1646
+LS 6/13/2025-Correcting warning message-GW-3818"
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Warning,"If Accident Prevention Course Completion Date is > 3 years than the effective date, set Accident Prevention Course Discount to No and display message",Accident Prevention Course Completion Date must be within the last 3 years - Driver #X. Accident Prevention Course Discount has been set to NO.,"Application, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, Rewrite-Renewal",,LE 6/12/2025- Added for TN GW-3798
+PRIS,NSPA,X,NO,NO,NO,NO,NO,NO,NO,NO,NO,YES,NO,NO,NO,NO,NO,NO,NO,NO,NO,Validation,Warning,"If Accident Prevention Course Question is Yes, set Accident Prevention Course Discount to No and display message",Accident Prevention Course Discount cannot apply if the course was taken pursuant to a court order or other governmental entity - Driver #X. Accident Prevention Course Discount has been set to NO.,"Application, Endorsement, Renewal Changes, Renewal Start, Renewal Activate, Rewrite-Renewal",,LE 6/12/2025- Added for TN GW-3798
